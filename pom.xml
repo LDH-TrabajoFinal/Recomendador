@@ -18,26 +18,36 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
+        	<groupId>junit</groupId>
+            	<artifactId>junit</artifactId>
+            	<version>4.11</version>
+            	<scope>test</scope>
         </dependency>
         <dependency>
-	      <groupId>org.apache.commons</groupId>
-	      <artifactId>commons-lang3</artifactId>
-	      <version>3.1</version>
-	    </dependency>
-	    <dependency>
-	      <groupId>org.apache.commons</groupId>
-	      <artifactId>commons-csv</artifactId>
-	      <version>1.9.0</version>
-	    </dependency>
-		    <dependency>
+	      	<groupId>org.apache.commons</groupId>
+	      	<artifactId>commons-lang3</artifactId>
+	      	<version>3.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+	      	<artifactId>commons-csv</artifactId>
+	      	<version>1.9.0</version>
+	</dependency>
+	<dependency>
 	        <groupId>edu.duke.cs</groupId>
 	        <artifactId>ospreyservice</artifactId>
 	        <version>0.2</version>
-	    </dependency>
+	</dependency>
+	<dependency>
+		<groupId>io.netty</groupId>
+		<artifactId>netty-handler</artifactId>
+		<version>[4.1.46,)</version>
+	</dependency>
+	<dependency>
+  		<groupId>io.netty</groupId>
+		<artifactId>netty-codec</artifactId>
+		<version>[4.1.68.Final,)</version>
+	</dependency>
     </dependencies>
 
 
