@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="edu.duke">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>17</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>10</Ce>
+                <A>0.06</A>
+                <I>0.91</I>
+                <D>0.04</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="package-info.java">
+                    edu.duke.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DirectoryResource.java">
+                    edu.duke.DirectoryResource
+                </Class>
+                <Class sourceFile="FileResource.java">
+                    edu.duke.FileResource
+                </Class>
+                <Class sourceFile="FileSelector.java">
+                    edu.duke.FileSelector
+                </Class>
+                <Class sourceFile="FileSelector.java">
+                    edu.duke.FileSelector$1
+                </Class>
+                <Class sourceFile="FileSelector.java">
+                    edu.duke.FileSelector$ChooserFilter
+                </Class>
+                <Class sourceFile="ImageFrame.java">
+                    edu.duke.ImageFrame
+                </Class>
+                <Class sourceFile="ImageFrame.java">
+                    edu.duke.ImageFrame$ImagePanel
+                </Class>
+                <Class sourceFile="ImageResource.java">
+                    edu.duke.ImageResource
+                </Class>
+                <Class sourceFile="Pixel.java">
+                    edu.duke.Pixel
+                </Class>
+                <Class sourceFile="Point.java">
+                    edu.duke.Point
+                </Class>
+                <Class sourceFile="RangeResource.java">
+                    edu.duke.RangeResource
+                </Class>
+                <Class sourceFile="ResourceException.java">
+                    edu.duke.ResourceException
+                </Class>
+                <Class sourceFile="Shape.java">
+                    edu.duke.Shape
+                </Class>
+                <Class sourceFile="StorageResource.java">
+                    edu.duke.StorageResource
+                </Class>
+                <Class sourceFile="TextIterable.java">
+                    edu.duke.TextIterable
+                </Class>
+                <Class sourceFile="TextIterable.java">
+                    edu.duke.TextIterable$1
+                </Class>
+                <Class sourceFile="URLResource.java">
+                    edu.duke.URLResource
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.awt</Package>
+                <Package>java.awt.image</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.net</Package>
+                <Package>java.util</Package>
+                <Package>javax.imageio</Package>
+                <Package>javax.swing</Package>
+                <Package>javax.swing.filechooser</Package>
+                <Package>org.apache.commons.csv</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>ull.es</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="java.awt">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.awt.image">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.net">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.imageio">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing.filechooser">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.commons.csv">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="ull.es">
+            <Stats>
+                <TotalClasses>24</TotalClasses>
+                <ConcreteClasses>21</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0.12</A>
+                <I>1</I>
+                <D>0.12</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Filter.java">
+                    ull.es.Filter
+                </Class>
+                <Class sourceFile="Rater.java">
+                    ull.es.Rater
+                </Class>
+                <Class sourceFile="Recommender.java">
+                    ull.es.Recommender
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllFilters.java">
+                    ull.es.AllFilters
+                </Class>
+                <Class sourceFile="Client.java">
+                    ull.es.Client
+                </Class>
+                <Class sourceFile="DirectorsFilter.java">
+                    ull.es.DirectorsFilter
+                </Class>
+                <Class sourceFile="EfficientRater.java">
+                    ull.es.EfficientRater
+                </Class>
+                <Class sourceFile="FirstRatings.java">
+                    ull.es.FirstRatings
+                </Class>
+                <Class sourceFile="FourthRatings.java">
+                    ull.es.FourthRatings
+                </Class>
+                <Class sourceFile="GenreFilter.java">
+                    ull.es.GenreFilter
+                </Class>
+                <Class sourceFile="MinutesFilter.java">
+                    ull.es.MinutesFilter
+                </Class>
+                <Class sourceFile="Movie.java">
+                    ull.es.Movie
+                </Class>
+                <Class sourceFile="MovieDatabase.java">
+                    ull.es.MovieDatabase
+                </Class>
+                <Class sourceFile="MovieRunnerAverage.java">
+                    ull.es.MovieRunnerAverage
+                </Class>
+                <Class sourceFile="MovieRunnerSimilarRatings.java">
+                    ull.es.MovieRunnerSimilarRatings
+                </Class>
+                <Class sourceFile="MovieRunnerWithFilters.java">
+                    ull.es.MovieRunnerWithFilters
+                </Class>
+                <Class sourceFile="PlainRater.java">
+                    ull.es.PlainRater
+                </Class>
+                <Class sourceFile="RaterDatabase.java">
+                    ull.es.RaterDatabase
+                </Class>
+                <Class sourceFile="Rating.java">
+                    ull.es.Rating
+                </Class>
+                <Class sourceFile="RecommendationRunner.java">
+                    ull.es.RecommendationRunner
+                </Class>
+                <Class sourceFile="SecondRatings.java">
+                    ull.es.SecondRatings
+                </Class>
+                <Class sourceFile="ThirdRatings.java">
+                    ull.es.ThirdRatings
+                </Class>
+                <Class sourceFile="TrueFilter.java">
+                    ull.es.TrueFilter
+                </Class>
+                <Class sourceFile="YearAfterFilter.java">
+                    ull.es.YearAfterFilter
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>edu.duke</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>org.apache.commons.csv</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>RecommendationRunner xref</title>
+<link type="text/css" rel="stylesheet" href="../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../apidocs/ull/es/RecommendationRunner.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> ull.es;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_javadoccomment"> * Write a description of RecommendationRunner here.</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_javadoccomment"> * </em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_javadoccomment"> * @author (your name) </em>
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment"> * @version (a version number or a date)</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> * extrance link:<a href="http://www.dukelearntoprogram.com/capstone/recommender.php?id=m10ZYHs7JxgOdD" target="alexandria_uri">http://www.dukelearntoprogram.com/capstone/recommender.php?id=m10ZYHs7JxgOdD</a></em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> *</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <strong class="jxr_keyword">import</strong> java.util.*;
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a name="RecommendationRunner" href="../../ull/es/RecommendationRunner.html#RecommendationRunner">RecommendationRunner</a> <strong class="jxr_keyword">implements</strong> <a name="Recommender" href="../../ull/es/Recommender.html#Recommender">Recommender</a> {
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  	<strong class="jxr_keyword">public</strong> ArrayList&lt;String&gt; getItemsToRate(){
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  		ArrayList&lt;String&gt; moviesToRate = <strong class="jxr_keyword">new</strong> ArrayList&lt;String&gt;();
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  		String [] movies ={<span class="jxr_string">"1126590"</span>,<span class="jxr_string">"1179031"</span>,<span class="jxr_string">"1198156"</span>,<span class="jxr_string">"1216491"</span>,
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  							<span class="jxr_string">"1361318"</span>,<span class="jxr_string">"1408253"</span>,<span class="jxr_string">"1430612"</span>,<span class="jxr_string">"1441953"</span>,
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  							<span class="jxr_string">"1490017"</span>,<span class="jxr_string">"1528100"</span>,<span class="jxr_string">"1571249"</span>,<span class="jxr_string">"1600196"</span>};
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  		<strong class="jxr_keyword">for</strong>(<strong class="jxr_keyword">int</strong> i=0;i&lt;12;i++){
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  			moviesToRate.add(movies[i]);
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  		}
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  		<strong class="jxr_keyword">return</strong> moviesToRate;
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  	}
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> printRecommendationsFor(String webRaterID){
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  		FourthRatings fr = <strong class="jxr_keyword">new</strong> <a name="FourthRatings" href="../../ull/es/FourthRatings.html#FourthRatings">FourthRatings</a>();
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  		<strong class="jxr_keyword">int</strong> numSimilarRaters = 5;
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  		<strong class="jxr_keyword">int</strong> minimalRaters = 3 ;
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  		ArrayList&lt;Rating&gt; recList = fr.getSimilarRatings(webRaterID,numSimilarRaters,minimalRaters);
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>  		
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>  		<strong class="jxr_keyword">if</strong>(recList.size()==0){
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  			printError();
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  		}
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>  		<strong class="jxr_keyword">else</strong>{
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  			printUpperPart();
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>               <strong class="jxr_keyword">int</strong> i=0;
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>               <strong class="jxr_keyword">for</strong>(<a name="Rating" href="../../ull/es/Rating.html#Rating">Rating</a> r: recList){
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>                   i++;
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>                   <strong class="jxr_keyword">if</strong>((i+1)%2 == 0){
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>                   	System.out.println(<span class="jxr_string">"&lt;tr class=\&quot;even_rows\&quot;&gt;&lt;td&gt;"</span> + i + <span class="jxr_string">"&lt;/td&gt;"</span>);
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>                   }
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>                   <strong class="jxr_keyword">else</strong>{
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>                   	System.out.println(<span class="jxr_string">"&lt;tr class=\&quot;odd_rows\&quot;&gt;&lt;td&gt;"</span> + i + <span class="jxr_string">"&lt;/td&gt;"</span>);
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>                   }
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>  
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>                   String URL = MovieDatabase.getPoster(r.getItem());
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>                   String title = MovieDatabase.getTitle(r.getItem());
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>                   String director = MovieDatabase.getDirector(r.getItem());
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>                   String country = MovieDatabase.getCountry(r.getItem());
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>                   <strong class="jxr_keyword">int</strong> year = MovieDatabase.getYear(r.getItem());
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>                   String genre = MovieDatabase.getGenres(r.getItem());
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>                   <strong class="jxr_keyword">int</strong> minutes = MovieDatabase.getMinutes(r.getItem());
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>  
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>                   System.out.println(<span class="jxr_string">"&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;td class = \&quot;pic\&quot;&gt;"</span>);
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>  
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>                   <strong class="jxr_keyword">if</strong>(URL.length()&gt;3){
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>                   	System.out.println(<span class="jxr_string">"&lt;img src = \&quot;"</span>+URL+<span class="jxr_string">"\&quot; target=_blank&gt;&lt;/td&gt;"</span>);
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>                   }
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>                    
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>                   System.out.println(<span class="jxr_string">"&lt;td&gt;&lt;h3&gt;"</span>+ title+<span class="jxr_string">"&lt;/h3&gt;"</span>);
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>                   System.out.println(<span class="jxr_string">"&lt;b&gt;by "</span>+ genre+<span class="jxr_string">"&lt;/b&gt;&lt;br&gt;"</span>);
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>                   System.out.println(year+<span class="jxr_string">"&lt;br&gt;"</span>);
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>                   System.out.println(country+<span class="jxr_string">"&lt;br&gt;"</span>);
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>                   System.out.println(minutes+<span class="jxr_string">" minutes&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;"</span>);
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>                   <strong class="jxr_keyword">if</strong>(i&gt;12) <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>               }
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>               printLowerPart();
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>  
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>  		}
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  	}
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>  
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>  	<strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> printError(){
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>  		System.out.println(<span class="jxr_string">"This is system error, please try again!"</span>);
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>  	}
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>  
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>    	<strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> printUpperPart(){
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>          System.out.println(<span class="jxr_string">"&lt;link href=\&quot;https://fonts.googleapis.com/css?family=Syncopate\&quot; rel=\&quot;stylesheet\&quot;&gt;&lt;link href=\&quot;https://fonts.googleapis.com/css?family=Roboto|Syncopate\&quot; rel=\&quot;stylesheet\&quot;&gt;&lt;div id=\&quot;header\&quot;&gt;&lt;h2&gt;Recommended Movies:&lt;/h2&gt;&lt;/div&gt;&lt;table class=\&quot;outside_table\&quot;&gt;&lt;tr  class=\&quot;table-header\&quot;&gt;&lt;th&gt;&amp;nbsp&lt;/th&gt;&lt;th class=\&quot;movie_title\&quot;&gt;Title&lt;/th&gt;&lt;/tr&gt;"</span>);
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>       }
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>       
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> printCSS(){
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>           System.out.println(<span class="jxr_string">"&lt;style&gt;* {margin: 0;padding: 0;}img{height: 100px;margin-right:10px;}#header{background-color: #F49F58;margin-top: 0;height: 100px;}h2{padding-left: 15px;padding-top: 40px;color: #FFFFFF;}h3{}body{margin-top: 0;font-family: 'Arial'}th{text-align: left;font-family: 'Arial', sans-serif;padding-top:15px;padding-bottom: 7px;}td{padding-top: 10px;padding-right: 10px;padding-left: 10px;padding-bottom: 5px;}tr{padding-bottom: 10px;}.table-header{background-color: #FFB97F;}.odd_rows{background-color: #FFE4CC;}.even_rows{background-color: #FFFFFF;}.outside_table{width: 100%;border-collapse: collapse;}.movie_title{width = 40%;}&lt;/style&gt;"</span>);
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>       }
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>       
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> printLowerPart(){
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>          System.out.println(<span class="jxr_string">"&lt;/table&gt;"</span>);
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>      }
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2022. All rights reserved.</div>
+</body>
+</html>
