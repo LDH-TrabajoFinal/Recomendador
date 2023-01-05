@@ -1,5 +1,8 @@
 package ull.es;
 
+/**
+ * @brief clase que implementa el filtro para el numero de minutos
+ */
 public class MinutesFilter implements Filter{
 	private int myMinMinutes;
 	private int myMaxMinutes;

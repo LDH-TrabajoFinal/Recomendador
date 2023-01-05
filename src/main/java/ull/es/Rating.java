@@ -1,5 +1,6 @@
 package ull.es;
-// An immutable passive data object (PDO) to represent the rating data
+
+
 public class Rating implements Comparable<Rating> {
     private String item;
     private double value;
@@ -9,21 +10,34 @@ public class Rating implements Comparable<Rating> {
         value = aValue;
     }
 
-    // Returns item being rated
+    /**
+     * @return the item
+     */
     public String getItem () {
         return item;
     }
 
-    // Returns the value of this rating (as a number so it can be used in calculations)
+   /**
+     * @return the value of this rating (as a number so it can be used in calculations)
+     */
     public double getValue () {
         return value;
     }
 
-    // Returns a string of all the rating information
+    /**
+     * @param item the item to set
+     * @return string of all the rating information
+     */
     public String toString () {
         return "[" + getItem() + ", " + getValue() + "]";
     }
 
+
+    /**
+     * @param other rating que comparar
+     * @return 0 if the ratings are equal, -1 if this rating is less than the
+     * parameter rating, 1 if this rating is greater than the parameter rating
+     */
     public int compareTo(Rating other) {
         if (value < other.value) return -1;
         if (value > other.value) return 1;

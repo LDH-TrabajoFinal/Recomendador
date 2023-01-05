@@ -1,5 +1,8 @@
 package ull.es;
 
+/**
+ * @brief clase que ejecuta el recomendador de peliculas
+ */
 public class Client {
 
     public static void main(String[] args) {

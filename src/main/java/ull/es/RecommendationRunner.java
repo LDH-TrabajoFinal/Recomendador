@@ -1,18 +1,13 @@
 package ull.es;
 
-/**
- * Write a description of RecommendationRunner here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- * extrance link:http://www.dukelearntoprogram.com/capstone/recommender.php?id=m10ZYHs7JxgOdD
- *
- */
-
 import java.util.*;
 
-public class RecommendationRunner implements Recommender {
 
+
+public class RecommendationRunner implements Recommender {
+    /**
+     * @return lista de peliculas para recomendar
+     */
 	public ArrayList<String> getItemsToRate(){
 		ArrayList<String> moviesToRate = new ArrayList<String>();
 
@@ -25,6 +20,10 @@ public class RecommendationRunner implements Recommender {
 		return moviesToRate;
 	}
 
+    /**
+     * @brief imprime por pantalla recomendaciones de peliculas para un usuario
+     * @param webRaterID id de la web que hace la recomendacion
+     */
 	public void printRecommendationsFor(String webRaterID){
 		FourthRatings fr = new FourthRatings();
 		int numSimilarRaters = 5;
@@ -74,18 +73,23 @@ public class RecommendationRunner implements Recommender {
 		}
 	}
 
+    /**
+     * @brief imprime por pantalla un mensaje de error
+     */
 	private void printError(){
 		System.out.println("This is system error, please try again!");
 	}
 
+    /**
+    * @brief imprime por pantalla la parte superior de la pagina web
+    */
   	private void printUpperPart(){
         System.out.println("<link href=\"https://fonts.googleapis.com/css?family=Syncopate\" rel=\"stylesheet\"><link href=\"https://fonts.googleapis.com/css?family=Roboto|Syncopate\" rel=\"stylesheet\"><div id=\"header\"><h2>Recommended Movies:</h2></div><table class=\"outside_table\"><tr  class=\"table-header\"><th>&nbsp</th><th class=\"movie_title\">Title</th></tr>");
      }
-     
-    private void printCSS(){
-         System.out.println("<style>* {margin: 0;padding: 0;}img{height: 100px;margin-right:10px;}#header{background-color: #F49F58;margin-top: 0;height: 100px;}h2{padding-left: 15px;padding-top: 40px;color: #FFFFFF;}h3{}body{margin-top: 0;font-family: 'Arial'}th{text-align: left;font-family: 'Arial', sans-serif;padding-top:15px;padding-bottom: 7px;}td{padding-top: 10px;padding-right: 10px;padding-left: 10px;padding-bottom: 5px;}tr{padding-bottom: 10px;}.table-header{background-color: #FFB97F;}.odd_rows{background-color: #FFE4CC;}.even_rows{background-color: #FFFFFF;}.outside_table{width: 100%;border-collapse: collapse;}.movie_title{width = 40%;}</style>");
-     }
-     
+
+    /**
+     * @brief imprime por pantalla la parte inferior de la pagina web
+     */
     private void printLowerPart(){
         System.out.println("</table>");
     }

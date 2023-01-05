@@ -2,6 +2,9 @@ package ull.es;
 
 import java.util.ArrayList;
 
+/**
+ * @brief clase que guarda una lista de filtros
+ */
 public class AllFilters implements Filter {
     ArrayList<Filter> filters;
     

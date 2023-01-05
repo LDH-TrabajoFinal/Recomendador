@@ -1,67 +1,59 @@
 package ull.es;
 
-/**
- * Write a description of Recommender here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import java.util.*;
 
 /**
- * Implement this interface to allow your code to be integrated with our
- * web site.
- * 
- * When users first visit the recommender website, our code will call the
- * method <code>getItemsToRate()</code> to get a list of movies to display
- * on the web page for users to rate.
- * 
- * When a user submits their ratings, our code will call the method <code>
- * printRecommendationsFor</code> to get your recommendations based on the
- * user's ratings.  The ID given to this method is for a new Rater that we 
- * have already added to the RaterDatabase with ratings for the movies 
- * returned by the first method.  Whatever is printed from that method will 
- * be displayed on the web page: HTML, plain text, or debugging information.
- * 
+ * Cuando los usuarios visitan por primera vez el sitio web del recomendador,
+ * nuestro código llamará al método getItemsToRate () para obtener una lista de
+ * películas para mostrar en la página web para que los usuarios califiquen.
+ *
+ * Cuando un usuario envía sus calificaciones, nuestro código llamará al método
+ * printRecommendationsFor para obtener sus recomendaciones basadas en las
+ * calificaciones del usuario. El ID que se le da a este método es para un nuevo
+ * Rater que ya hemos agregado a la RaterDatabase con calificaciones para las
+ * películas devueltas por el primer método. Lo que se imprima desde ese método
+ * se mostrará en la página web: HTML, texto sin formato o información de
+ * depuración.
  */
 
 public interface Recommender {
-     /**
-     * This method returns a list of movie IDs that will be used to look up 
-     * the movies in the MovieDatabase and present them to users to rate. 
-     *  
-     * The movies returned in the list will be displayed on a web page, so
-     * the number you choose may affect how long the page takes to load and
-     * how willing users are to rate the movies.  For example, 10-20 should
-     * be fine, 50 or more would be too many.
-     * 
-     * There are no restrictions on the method you use to generate this list
-     * of movies: the most recent movies, movies from a specific genre, 
-     * randomly chosen movies, or simply your favorite movies.
-     * 
-     * The ratings for these movies will make the profile for a new Rater 
-     * that will be used to compare to for finding recommendations.
+    /**
+     * Este método devuelve una lista de identificadores de películas que se
+     * utilizarán para buscar las películas en la MovieDatabase y presentarlas
+     * a los usuarios para que las califiquen.
+     *
+     * Las películas devueltas en la lista se mostrarán en una página web, por
+     * lo que el número que elija puede afectar el tiempo que tarda en cargar la
+     * página y la disposición de los usuarios a calificar las películas. Por
+     * ejemplo, 10-20 debería estar bien, 50 o más serían demasiados.
+     *
+     * No hay restricciones en el método que utilice para generar esta lista de
+     * películas: las películas más recientes, películas de un género específico,
+     * películas elegidas al azar o simplemente sus películas favoritas.
+     *
+     * Las calificaciones de estas películas harán el perfil de un nuevo Rater
+     * que se utilizará para comparar para encontrar recomendaciones.
      */
     public ArrayList<String> getItemsToRate ();
 
     /**
-     * This method returns nothing, but prints out an HTML table of the 
-     * movies recommended for the given rater.
-     * 
-     * The HTML printed will be displayed on a web page, so the number you
-     * choose to display may affect how long the page takes to load.  For 
-     * example, you may want to limit the number printed to only the top 
-     * 20-50 movies recommended or to movies not rater by the given rater.
-     * 
-     * You may also include CSS styling for your table using the &lt;style&gt;
-     * tag before you print the table.  There are no restrictions on which 
-     * movies you print, what order you print them in, or what information
-     * you include about each movie. 
-     * 
-     * @param webRaterID the ID of a new Rater that has been already added to 
-     *        the RaterDatabase with ratings for the movies returned by the 
-     *        method getItemsToRate
+     * Este método no devuelve nada, pero imprime una tabla HTML de las películas
+     * recomendadas para el rater dado.
+     *
+     * El HTML impreso se mostrará en una página web, por lo que el número que
+     * elija para mostrar puede afectar el tiempo que tarda en cargar la página.
+     * Por ejemplo, es posible que desee limitar el número impreso solo a las
+     * 20-50 mejores películas recomendadas o a películas no calificadas por el
+     * rater dado.
+     *
+     * También puede incluir estilos CSS para su tabla utilizando la etiqueta
+     * &lt;style&gt; antes de imprimir la tabla. No hay restricciones sobre qué
+     * películas imprime, en qué orden las imprime o qué información incluye
+     * sobre cada película.
+     *
+     * @param webRaterID el ID de un nuevo Rater que ya se ha agregado a la
+     *        RaterDatabase con calificaciones para las películas devueltas por el
+     *        método getItemsToRate
      */
     public void printRecommendationsFor (String webRaterID);
 }

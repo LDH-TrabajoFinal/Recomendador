@@ -1,5 +1,8 @@
 package ull.es;
 
+/**
+ * @brief clase que implementa el filtro para el año
+ */
 public class YearAfterFilter implements Filter {
 	private int myYear;
 	

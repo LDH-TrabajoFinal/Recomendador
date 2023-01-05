@@ -1,17 +1,8 @@
 package ull.es;
 
-import edu.duke.*;
-
 import java.util.ArrayList;
 
-import org.apache.commons.csv.*;
 
-/**
- * Write a description of SecondRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class SecondRatings {
     private ArrayList<Movie> myMovies;
     private ArrayList<Rater> myRaters;
@@ -28,16 +19,26 @@ public class SecondRatings {
         myMovies = fr.loadMovies(moviefile);
         myRaters = fr.loadRaters(loadRaters);
     }
-    
+
+    /**
+     * @return the number of movies that were read in and stored in the ArrayList of type Movie
+     */
     public int getMovieSize(){
         return myMovies.size();
     
     }
-    
+
+    /**
+     * @return the number of raters that were read in and stored in the ArrayList of type Rater
+     */
     public int getRaterSize(){
         return myRaters.size();
     }
-    
+
+    /**
+     * @param id of the movie
+     * @return the title of the movie
+     */
     private double getAverageByID(String id,int minimalRaters){
         double average =0;
         double total=0;
@@ -55,7 +56,11 @@ public class SecondRatings {
         return average;
         
     }
-    
+
+    /**
+     * @param minimalRaters
+     * @return an ArrayList of type Rating of all the movies and their average ratings, for all those movies that have at least the minimal number of raters supplying a rating
+     */
     public ArrayList<Rating> getAverageRatings(int minimalRaters){
         ArrayList<Rating> avgRatingList = new ArrayList<Rating>();
         for(Movie movie:myMovies){
@@ -73,7 +78,11 @@ public class SecondRatings {
         }
         return avgRatingList;
     }
-    
+
+    /**
+     * @param title of the movie
+     * @return the movie ID
+     */
     public String getTitle(String id){
         String title= "";
         for(Movie movie:myMovies){
@@ -90,7 +99,11 @@ public class SecondRatings {
             return id;
         }
     }
-    
+
+    /**
+     * @param title of the movie
+     * @return the movie ID
+     */
     public String getID(String title){
         String id ="";
         for(Movie movie:myMovies){
@@ -108,7 +121,4 @@ public class SecondRatings {
         }
         
     }
-    
-    
-    
 }

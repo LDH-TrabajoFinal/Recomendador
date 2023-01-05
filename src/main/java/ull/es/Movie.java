@@ -1,9 +1,6 @@
 package ull.es;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
-// An immutable passive data object (PDO) to represent item data
 public class Movie {
     private String id;
     private String title;
@@ -35,43 +32,65 @@ public class Movie {
         minutes = theMinutes;
     }
 
-    // Returns ID associated with this item
+    /**
+     * @return the id
+     */
     public String getID () {
         return id;
     }
 
-    // Returns title of this item
+    /**
+     * @return the title
+     */
     public String getTitle () {
         return title;
     }
 
-    // Returns year in which this item was published
+    /**
+     * @return the year
+     */
     public int getYear () {
         return year;
     }
 
-    // Returns genres associated with this item
+    /**
+     * @return the genres
+     */
     public String getGenres () {
         return genres;
     }
 
+    /**
+     * @return the country
+     */
     public String getCountry(){
         return country;
     }
 
+    /**
+     * @return the director
+     */
     public String getDirector(){
         return director;
     }
 
+    /**
+     * @return the poster
+     */
     public String getPoster(){
         return poster;
     }
 
+    /**
+     * @return the minutes
+     */
     public int getMinutes(){
         return minutes;
     }
 
-    // Returns a string of the item's information
+    /**
+     * @return the movie info
+     */
     public String toString () {
         String result = "Movie [id=" + id + ", title=" + title + ", year=" + year;
         result += ", genres= " + genres + "]";

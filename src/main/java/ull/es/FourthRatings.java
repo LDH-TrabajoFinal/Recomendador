@@ -1,16 +1,17 @@
 package ull.es;
 
-import edu.duke.*;
 import java.util.*;
-import org.apache.commons.csv.*;
 
-/**
- * Write a description of FourthRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class FourthRatings {
+	/**
+	 * This method returns a double representing the average movie rating for this ID
+	 * if there are at least minimalRaters ratings. If there are not minimalRaters
+	 * ratings, then it returns 0.0.
+	 *
+	 * @param movieID
+	 * @param minimalRaters
+	 * @return
+	 */
 	private double getAverageByID(String id,int minimalRaters){
         double average =0;
         double total=0;
@@ -32,8 +33,13 @@ public class FourthRatings {
         return average;
         
     }
-    
-    public ArrayList<Rating> getAverageRatings(int minimalRaters){
+
+	/**
+	 * This method returns an ArrayList of all the Rating objects for movies that
+	 * @param minimalRaters
+	 * @return
+	 */
+	public ArrayList<Rating> getAverageRatings(int minimalRaters){
         ArrayList<Rating> avgRatingList = new ArrayList<Rating>();
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
         for(String id:movies){
@@ -47,6 +53,12 @@ public class FourthRatings {
         return avgRatingList;
     }
 
+	/**
+	 * This method returns an ArrayList of all the Rating objects for movies that
+	 * @param minimalRaters
+	 * @param filterCriteria
+	 * @return
+	 */
     public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters,Filter filterCriteria)
     {
         ArrayList<Rating> avgRatingListByFilter = new ArrayList<Rating>();
@@ -62,6 +74,12 @@ public class FourthRatings {
 
     }
 
+	/**
+	 * This method returns the dot product of two Rater objects
+	 * @param me
+	 * @param r
+	 * @return
+	 */
     private double dotProduct(Rater me,Rater r){
     	double similarValue=0;
     	ArrayList<String> itemsRatedByMe = me.getItemsRated();
@@ -75,8 +93,13 @@ public class FourthRatings {
     		}
     	}
     	return similarValue;
-    } 
+    }
 
+	/**
+	 * This method returns an ArrayList of type Rating of all the raters and their
+	 * @param id
+	 * @return
+	 */
     private  ArrayList<Rating> getSimilarities(String id){
     	ArrayList<Rating> list = new ArrayList<Rating>();
     	ArrayList<Rater> allRaters = RaterDatabase.getRaters();
@@ -98,11 +121,25 @@ public class FourthRatings {
     	return list;
     }
 
-     public ArrayList<Rating> getSimilarRatings(String id, int numSimilarRaters, int minimalRaters){
+	/**
+	 * This method returns an ArrayList of type Rating of all the raters and their
+	 * @param id
+	 * @param numSimilarRaters
+	 * @param minimalRaters
+	 * @return
+	 */
+	public ArrayList<Rating> getSimilarRatings(String id, int numSimilarRaters, int minimalRaters){
         return getSimilarRatingsByFilter(id, numSimilarRaters, minimalRaters, new TrueFilter());
     }
 
-
+	/**
+	 * This method returns an ArrayList of type Rating of all the raters and their
+	 * @param id
+	 * @param numSimilarRaters
+	 * @param minimalRaters
+	 * @param filterCriteria
+	 * @return
+	 */
 	public ArrayList<Rating> getSimilarRatingsByFilter(String id,int numSimilarRaters, int minimalRaters, Filter filterCriteria){
 		ArrayList<Rating> movieSimRatings = new ArrayList();
 		ArrayList<Rating> raterSimList = getSimilarities(id);
@@ -145,6 +182,4 @@ public class FourthRatings {
 		Collections.sort(movieSimRatings, Collections.reverseOrder());
 		return movieSimRatings;
 	}
-
-
 }

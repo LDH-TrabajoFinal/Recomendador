@@ -1,12 +1,5 @@
 package ull.es;
 
-/**
- * Write a description of RaterDatabase here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import edu.duke.*;
 import java.util.*;
 import org.apache.commons.csv.*;
@@ -26,8 +19,12 @@ public class RaterDatabase {
  			ourRaters= new HashMap<String,Rater>();
  			addRatings("data/" + filename);
  		}
- 	}	
- 	
+ 	}
+
+    /**
+     * This method adds the ratings of a rater to the database
+     * @param filename
+     */
     public static void addRatings(String filename) {
         initialize(); 
         FileResource fr = new FileResource(filename);
@@ -39,7 +36,13 @@ public class RaterDatabase {
                 addRaterRating(id,item,Double.parseDouble(rating));
         } 
     }
-    
+
+    /**
+     * This method adds a rater to the database
+     * @param raterID the ID of the rater
+     * @param movieID the ID of the movie
+     * @param rating the rating of the movie
+     */
     public static void addRaterRating(String raterID, String movieID, double rating) {
         initialize(); 
         Rater rater =  null;
@@ -52,20 +55,33 @@ public class RaterDatabase {
                  }
                  rater.addRating(movieID,rating);
     } 
-	         
+
+    /**
+     * This method returns a rater given its ID
+     * @param id the ID of the rater
+     * @return the rater
+     */
     public static Rater getRater(String id) {
     	initialize();
     	
     	return ourRaters.get(id);
     }
-    
+
+    /**
+     * This method returns the list of raters
+     * @return the list of raters
+     */
     public static ArrayList<Rater> getRaters() {
     	initialize();
     	ArrayList<Rater> list = new ArrayList<Rater>(ourRaters.values());
     	
     	return list;
     }
- 
+
+    /**
+     * This method returns the number of raters
+     * @return
+     */
     public static int size() {
 	    return ourRaters.size();
     }

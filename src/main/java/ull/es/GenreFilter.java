@@ -1,5 +1,8 @@
 package ull.es;
 
+/**
+ * @brief clase que implementa el filtro para generos
+ */
 public class GenreFilter implements Filter{
     private  String myGenre;
 
