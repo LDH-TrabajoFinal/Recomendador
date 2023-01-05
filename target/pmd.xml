@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.49.0" timestamp="2022-12-22T12:10:24.366">
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/FileResource.java">
+<violation beginline="331" endline="333" begincolumn="17" endcolumn="17" rule="EmptyCatchBlock" ruleset="Error Prone" package="edu.duke" class="FileResource" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="395" endline="397" begincolumn="13" endcolumn="13" rule="EmptyCatchBlock" ruleset="Error Prone" package="edu.duke" class="FileResource" method="initFromStream" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/ImageFrame.java">
+<violation beginline="27" endline="27" begincolumn="47" endcolumn="51" rule="UnusedFormalParameter" ruleset="Best Practices" package="edu.duke" class="ImageFrame" method="ImageFrame" variable="image" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused constructor parameters such as 'image'.
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/ImageResource.java">
+<violation beginline="326" endline="328" begincolumn="13" endcolumn="13" rule="EmptyControlStatement" ruleset="Code Style" package="edu.duke" class="ImageResource" method="getImageFromFile" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#emptycontrolstatement" priority="3">
+Empty while statement
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/Shape.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="29" rule="UnnecessaryImport" ruleset="Code Style" package="edu.duke" class="Shape" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unnecessary import from the current package 'edu.duke.FileResource'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/URLResource.java">
+<violation beginline="205" endline="207" begincolumn="13" endcolumn="13" rule="EmptyCatchBlock" ruleset="Error Prone" package="edu.duke" class="URLResource" method="initFromStream" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_errorprone.html#emptycatchblock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/EfficientRater.java">
+<violation beginline="26" endline="26" begincolumn="29" endcolumn="51" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="EfficientRater" method="addRating" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/Filter.java">
+<violation beginline="4" endline="4" begincolumn="9" endcolumn="37" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Filter" method="satisfies" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'satisfies': the method is declared in an interface type
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/FirstRatings.java">
+<violation beginline="20" endline="20" begincolumn="224" endcolumn="224" rule="UnnecessarySemicolon" ruleset="Code Style" package="ull.es" class="FirstRatings" method="loadMovies" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarysemicolon" priority="3">
+Unnecessary semicolon
+</violation>
+<violation beginline="82" endline="82" begincolumn="16" endcolumn="28" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="FirstRatings" method="loadRaters" variable="searchRaterID" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'searchRaterID'.
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/FourthRatings.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="FourthRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="FourthRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+<violation beginline="108" endline="108" begincolumn="21" endcolumn="32" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="FourthRatings" method="getSimilarRatingsByFilter" variable="raterSimList" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'raterSimList'.
+</violation>
+<violation beginline="109" endline="109" begincolumn="21" endcolumn="31" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="FourthRatings" method="getSimilarRatingsByFilter" variable="movieIDList" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'movieIDList'.
+</violation>
+<violation beginline="131" endline="136" begincolumn="5" endcolumn="5" rule="EmptyControlStatement" ruleset="Code Style" package="ull.es" class="FourthRatings" method="getSimilarRatingsByFilter" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#emptycontrolstatement" priority="3">
+Empty if statement
+</violation>
+<violation beginline="139" endline="142" begincolumn="4" endcolumn="4" rule="EmptyControlStatement" ruleset="Code Style" package="ull.es" class="FourthRatings" method="getSimilarRatingsByFilter" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#emptycontrolstatement" priority="3">
+Empty if statement
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/Movie.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="27" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="Movie" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.ArrayList'
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="24" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="Movie" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Arrays'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieDatabase.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieDatabase" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="29" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieDatabase" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.FileResource'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerAverage.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerAverage" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerAverage" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerSimilarRatings.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+<violation beginline="99" endline="99" begincolumn="54" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" method="printSimiliarRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="122" endline="122" begincolumn="54" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" method="printSimiliarRatingsByGenre" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="144" endline="144" begincolumn="54" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" method="printSimiliarRatingsByDirector" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="173" endline="173" begincolumn="54" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" method="printSimiliarRatingsByGenreAndMinutes" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="202" endline="202" begincolumn="54" endcolumn="69" rule="UselessParentheses" ruleset="Code Style" package="ull.es" class="MovieRunnerSimilarRatings" method="printAverageRatingsByYearAfterAndMinutes" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="243" endline="243" begincolumn="20" endcolumn="24" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="MovieRunnerSimilarRatings" method="printAverageRatingsByYearAfterAndGenreAndMinutes" variable="Title" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'Title'.
+</violation>
+<violation beginline="244" endline="244" begincolumn="20" endcolumn="24" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="MovieRunnerSimilarRatings" method="printAverageRatingsByYearAfterAndGenreAndMinutes" variable="Genre" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'Genre'.
+</violation>
+<violation beginline="246" endline="246" begincolumn="17" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="MovieRunnerSimilarRatings" method="printAverageRatingsByYearAfterAndGenreAndMinutes" variable="Year" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'Year'.
+</violation>
+<violation beginline="247" endline="247" begincolumn="17" endcolumn="20" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="MovieRunnerSimilarRatings" method="printAverageRatingsByYearAfterAndGenreAndMinutes" variable="Time" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'Time'.
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerWithFilters.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerWithFilters" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="MovieRunnerWithFilters" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/Rater.java">
+<violation beginline="6" endline="6" begincolumn="9" endcolumn="51" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="addRating" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'addRating': the method is declared in an interface type
+</violation>
+<violation beginline="7" endline="7" begincolumn="9" endcolumn="39" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="hasRating" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'hasRating': the method is declared in an interface type
+</violation>
+<violation beginline="8" endline="8" begincolumn="9" endcolumn="23" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="getID" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getID': the method is declared in an interface type
+</violation>
+<violation beginline="9" endline="9" begincolumn="9" endcolumn="38" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="getRating" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getRating': the method is declared in an interface type
+</violation>
+<violation beginline="10" endline="10" begincolumn="9" endcolumn="25" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="numRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'numRatings': the method is declared in an interface type
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="42" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Rater" method="getItemsRated" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getItemsRated': the method is declared in an interface type
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/RecommendationRunner.java">
+<violation beginline="53" endline="53" begincolumn="25" endcolumn="32" rule="UnusedLocalVariable" ruleset="Best Practices" package="ull.es" class="RecommendationRunner" method="printRecommendationsFor" variable="director" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'director'.
+</violation>
+<violation beginline="85" endline="85" begincolumn="18" endcolumn="27" rule="UnusedPrivateMethod" ruleset="Best Practices" package="ull.es" class="RecommendationRunner" method="printCSS" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+Avoid unused private methods such as 'printCSS()'.
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/Recommender.java">
+<violation beginline="46" endline="46" begincolumn="12" endcolumn="47" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Recommender" method="getItemsToRate" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getItemsToRate': the method is declared in an interface type
+</violation>
+<violation beginline="66" endline="66" begincolumn="12" endcolumn="60" rule="UnnecessaryModifier" ruleset="Code Style" package="ull.es" class="Recommender" method="printRecommendationsFor" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'printRecommendationsFor': the method is declared in an interface type
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/SecondRatings.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="SecondRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="SecondRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+</file>
+<file name="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/ThirdRatings.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="18" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="ThirdRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'edu.duke.*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="ull.es" class="ThirdRatings" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'org.apache.commons.csv.*'
+</violation>
+</file>
+</pmd>

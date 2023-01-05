@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="42" tokens="216">
+      <file begintoken="5987" column="9" endcolumn="5" endline="63" endtoken="6202"
+            line="22"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/FourthRatings.java"/>
+      <file begintoken="11943" column="9" endcolumn="5" endline="79" endtoken="12158"
+            line="38"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/ThirdRatings.java"/>
+      <codefragment><![CDATA[        for(Rater rater:myRaters){
+            if(rater.hasRating(id)){
+                countRaters++;
+                total = total + rater.getRating(id);
+            }
+        }
+        
+        if(countRaters >= minimalRaters){
+            average = total/countRaters;
+        }
+        return average;
+        
+    }
+    
+    public ArrayList<Rating> getAverageRatings(int minimalRaters){
+        ArrayList<Rating> avgRatingList = new ArrayList<Rating>();
+        ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
+        for(String id:movies){
+            double avg = getAverageByID(id,minimalRaters);
+            if(avg>0.0){
+                Rating currRating = new Rating(id,avg);
+                avgRatingList.add(currRating);
+            }    
+        }
+
+        return avgRatingList;
+    }
+
+    public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters,Filter filterCriteria)
+    {
+        ArrayList<Rating> avgRatingListByFilter = new ArrayList<Rating>();
+        ArrayList<String> movies = MovieDatabase.filterBy(filterCriteria);
+        for(String id:movies){
+            double avg = getAverageByID(id, minimalRaters);
+            if(avg>0.0){
+                Rating currRating = new Rating(id,avg);
+                avgRatingListByFilter.add(currRating);
+            }
+        }
+        return avgRatingListByFilter;
+
+    }]]></codefragment>
+   </duplication>
+   <duplication lines="16" tokens="110">
+      <file begintoken="7985" column="36" endcolumn="15" endline="82" endtoken="8094"
+            line="67"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerSimilarRatings.java"/>
+      <file begintoken="9998" column="36" endcolumn="16" endline="176" endtoken="10107"
+            line="161"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerWithFilters.java"/>
+      <codefragment><![CDATA[        ArrayList<Rating> list = fr.getAverageRatingsByFilter(minimalRaters,filtersList);
+        Collections.sort(list);
+        System.out.println(list.size() + " movie " + "matched");
+
+        for(Rating r:list){
+            String Title = MovieDatabase.getTitle(r.getItem());
+            String Genre = MovieDatabase.getGenres(r.getItem());
+            int Year = MovieDatabase.getYear(r.getItem());
+
+            System.out.println(r.getValue()+ " " + Year +" "+ Title );
+            System.out.println("       "+ Genre);
+        }
+
+    }
+
+    public void printSimiliarRatings(){]]></codefragment>
+   </duplication>
+   <duplication lines="28" tokens="110">
+      <file begintoken="11579" column="30" endcolumn="65" endline="60" endtoken="11688"
+            line="33"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/SecondRatings.java"/>
+      <file begintoken="11905" column="45" endcolumn="65" endline="53" endtoken="12014"
+            line="26"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/ThirdRatings.java"/>
+      <codefragment><![CDATA[        return myMovies.size();
+    
+    }
+    
+    public int getRaterSize(){
+        return myRaters.size();
+    }
+    
+    private double getAverageByID(String id,int minimalRaters){
+        double average =0;
+        double total=0;
+        int countRaters= 0;
+        for(Rater rater:myRaters){
+            if(rater.hasRating(id)){
+                countRaters++;
+                total = total + rater.getRating(id);
+            }
+        }
+        
+        if(countRaters >= minimalRaters){
+            average = total/countRaters;
+        }
+        return average;
+        
+    }
+    
+    public ArrayList<Rating> getAverageRatings(int minimalRaters){
+        ArrayList<Rating> avgRatingList = new ArrayList<Rating>();]]></codefragment>
+   </duplication>
+   <duplication lines="82" tokens="106">
+      <file begintoken="183" column="30" endcolumn="40" endline="241" endtoken="288"
+            line="160"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/FileResource.java"/>
+      <file begintoken="4166" column="103" endcolumn="40" endline="155" endtoken="4271"
+            line="76"
+            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/URLResource.java"/>
+      <codefragment><![CDATA[            initRead(filename);
+        }
+    }
+
+    /**
+     * Allow access to this opened file one line at a time.
+     * 
+     * @return an <code>Iterable</code> that will allow access to contents of opened file one line
+     *         at a time.
+     */
+    public Iterable<String> lines () {
+        return new TextIterable(mySource, "\\n");
+    }
+
+    /**
+     * Allow access to this opened file one word at a time, where words are separated by
+     * white-space. This means any form of spaces, like tabs or newlines, can delimit words.
+     * 
+     * @return an <code>Iterable</code> that will allow access to contents of opened file one word
+     *         at a time.
+     */
+    public Iterable<String> words () {
+        return new TextIterable(mySource, "\\s+");
+    }
+
+    /**
+     * Return entire contents of this opened file as one string.
+     * 
+     * @return a <code>String</code> that is the contents of the open file
+     */
+    public String asString () {
+        return mySource;
+    }
+
+    /**
+     * Returns a <code>CSVParser</code> object to access the contents of an open file.
+     * 
+     * Each line of the file should be formatted as data separated by commas and with a header row
+     * to describe the column names.
+     * 
+     * @return a <code>CSVParser</code> that can provide access to the records in the file one at a
+     *         time
+     * @throws exception if this file does not represent a CSV formatted data
+     */
+    public CSVParser getCSVParser () {
+        return getCSVParser(true);
+    }
+
+    /**
+     * Returns a <code>CSVParser</code> object to access the contents of an open file, possibly
+     * without a header row.
+     * 
+     * Each line of the file should be formatted as data separated by commas and with/without a
+     * header row to describe the column names.
+     * 
+     * @param withHeader uses first row of data as a header row only if true
+     * @return a <code>CSVParser</code> that can provide access to the records in the file one at a
+     *         time
+     * @throws exception if this file does not represent a CSV formatted data
+     */
+    public CSVParser getCSVParser (boolean withHeader) {
+        return getCSVParser(withHeader, ",");
+    }
+
+    /**
+     * Returns a <code>CSVParser</code> object to access the contents of an open file, possibly
+     * without a header row and a different data delimiter than a comma.
+     * 
+     * Each line of the file should be formatted as data separated by the delimiter passed as a
+     * parameter and with/without a header row to describe the column names. This is useful if the
+     * data is separated by some character other than a comma.
+     * 
+     * @param withHeader uses first row of data as a header row only if true
+     * @param delimiter a single character that separates one field of data from another
+     * @return a <code>CSVParser</code> that can provide access to the records in the file one at a
+     *         time
+     * @throws exception if this file does not represent a CSV formatted data
+     * @throws exception if <code>delimiter.length() != 1</code>
+     */
+    public CSVParser getCSVParser (boolean withHeader, String delimiter) {
+        if (delimiter == null || delimiter.length() != 1) {
+            throw new ResourceException("FileResource: CSV delimiter must be a single character: " + delimiter);]]></codefragment>
+   </duplication>
+</pmd-cpd>
