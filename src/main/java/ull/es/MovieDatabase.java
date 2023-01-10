@@ -4,6 +4,11 @@ import java.util.*;
 import org.apache.commons.csv.*;
 import edu.duke.FileResource;
 
+/**
+ * @brief clase que representa un filtro para los generos
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class MovieDatabase {
     private static HashMap<String, Movie> ourMovies;
 

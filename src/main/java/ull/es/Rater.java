@@ -1,7 +1,11 @@
 package ull.es;
 
 import java.util.*;
-
+ /**
+  * @brief interfaz que representa un rater
+  * @author (Bryan Yen)
+  * @version (2018-01-31)
+  */
 public interface Rater{
 	public void addRating(String item, double rating);
 	public boolean hasRating(String item);

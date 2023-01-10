@@ -2,6 +2,11 @@ package ull.es;
 
 import java.util.*;
 
+/**
+ * @brief clase que implementa el filtro para directores
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class EfficientRater implements Rater {
     private String myID;
     private HashMap<String,Rating> myRatings;

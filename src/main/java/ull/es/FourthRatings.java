@@ -2,6 +2,11 @@ package ull.es;
 
 import java.util.*;
 
+/**
+ * @brief clase que implementa el filtro
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class FourthRatings {
 	/**
 	 * This method returns a double representing the average movie rating for this ID

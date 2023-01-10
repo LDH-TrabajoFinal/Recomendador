@@ -4,6 +4,11 @@ import edu.duke.*;
 import java.util.*;
 import org.apache.commons.csv.*;
 
+/**
+ * @brief base de datos de raters
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class RaterDatabase {
 	private static HashMap<String,Rater> ourRaters;
      

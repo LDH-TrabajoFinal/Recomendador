@@ -2,6 +2,8 @@ package ull.es;
 
 /**
  * @brief clase que implementa el filtro para el numero de minutos
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
  */
 public class MinutesFilter implements Filter{
 	private int myMinMinutes;

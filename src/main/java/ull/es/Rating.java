@@ -1,6 +1,10 @@
 package ull.es;
 
-
+/**
+ * @brief Clase que representa un rating
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class Rating implements Comparable<Rating> {
     private String item;
     private double value;

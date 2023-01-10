@@ -4,6 +4,11 @@ import edu.duke.*;
 import java.util.*;
 import org.apache.commons.csv.*;
 
+/**
+ * @brief clase que representa un filtro para los generos
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class FirstRatings {
     /**
      * This method loads a list of movies from the file specified by the

@@ -1,6 +1,10 @@
 package ull.es;
 
-
+/**
+ * @brief clase pelicula
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
+ */
 public class Movie {
     private String id;
     private String title;

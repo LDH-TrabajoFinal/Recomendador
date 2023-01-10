@@ -2,6 +2,8 @@ package ull.es;
 
 /**
  * @brief clase que ejecuta el recomendador de peliculas
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
  */
 public class Client {
 

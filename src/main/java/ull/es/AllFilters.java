@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 /**
  * @brief clase que guarda una lista de filtros
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
  */
 public class AllFilters implements Filter {
     ArrayList<Filter> filters;
