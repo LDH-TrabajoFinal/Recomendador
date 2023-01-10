@@ -5,3 +5,4 @@
 ### Diego Diaz Morón (alu0101337975@ull.edu.es)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=LDH-TrabajoFinal_Recomendador)](https://sonarcloud.io/summary/new_code?id=LDH-TrabajoFinal_Recomendador)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/LDH-TrabajoFinal/Recomendador/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/LDH-TrabajoFinal/Recomendador/tree/master)
