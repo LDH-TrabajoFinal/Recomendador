@@ -1,5 +1,5 @@
-#Thu Dec 22 12:10:26 WET 2022
-/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/package-info.java=1671710416600
-configuration*?=2A41E12983EA6719D41F43B6084C6B0F7AE0ECE8
-module-resource*?\:checkstyle-suppressions.xml=CE64838F6621D57BF07F7E3D251C618418F687C3
-module-resource*?\:checkstyle-xpath-suppressions.xml=BEF6DD0D41E5EE23C5A2D1B2AF3211CD5D430535
+#Tue Jan 10 21:44:30 GMT 2023
+configuration*?=B240CA3A5D79053564BC77C5C4078C74F02EF577
+module-resource*?\:checkstyle-xpath-suppressions.xml=ECEFB382FB61A753FAB0D596371D41C7EB12AAB9
+module-resource*?\:checkstyle-suppressions.xml=B4E20263ADA2FB443D00AC84AE25677843561E13
+C\:\\Users\\JORGE\\git\\RecomendadorFinal\\src\\main\\java\\edu\\duke\\package-info.java=1673358942061

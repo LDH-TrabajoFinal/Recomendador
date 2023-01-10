@@ -4,18 +4,21 @@
 
         <Package name="edu.duke">
             <Stats>
-                <TotalClasses>17</TotalClasses>
+                <TotalClasses>18</TotalClasses>
                 <ConcreteClasses>17</ConcreteClasses>
-                <AbstractClasses>0</AbstractClasses>
+                <AbstractClasses>1</AbstractClasses>
                 <Ca>1</Ca>
                 <Ce>10</Ce>
-                <A>0</A>
+                <A>0.06</A>
                 <I>0.91</I>
-                <D>0.09</D>
+                <D>0.04</D>
                 <V>1</V>
             </Stats>
 
             <AbstractClasses>
+                <Class sourceFile="package-info.java">
+                    edu.duke.package-info
+                </Class>
             </AbstractClasses>
 
             <ConcreteClasses>
@@ -132,14 +135,14 @@
 
         <Package name="ull.es">
             <Stats>
-                <TotalClasses>24</TotalClasses>
-                <ConcreteClasses>21</ConcreteClasses>
+                <TotalClasses>20</TotalClasses>
+                <ConcreteClasses>17</ConcreteClasses>
                 <AbstractClasses>3</AbstractClasses>
                 <Ca>0</Ca>
                 <Ce>5</Ce>
-                <A>0.12</A>
+                <A>0.15</A>
                 <I>1</I>
-                <D>0.12</D>
+                <D>0.15</D>
                 <V>1</V>
             </Stats>
 
@@ -185,18 +188,6 @@
                 </Class>
                 <Class sourceFile="MovieDatabase.java">
                     ull.es.MovieDatabase
-                </Class>
-                <Class sourceFile="MovieRunnerAverage.java">
-                    ull.es.MovieRunnerAverage
-                </Class>
-                <Class sourceFile="MovieRunnerSimilarRatings.java">
-                    ull.es.MovieRunnerSimilarRatings
-                </Class>
-                <Class sourceFile="MovieRunnerWithFilters.java">
-                    ull.es.MovieRunnerWithFilters
-                </Class>
-                <Class sourceFile="PlainRater.java">
-                    ull.es.PlainRater
                 </Class>
                 <Class sourceFile="RaterDatabase.java">
                     ull.es.RaterDatabase

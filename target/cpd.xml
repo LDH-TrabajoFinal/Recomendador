@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
-   <duplication lines="42" tokens="216">
-      <file begintoken="5987" column="9" endcolumn="5" endline="63" endtoken="6202"
-            line="22"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/FourthRatings.java"/>
-      <file begintoken="11943" column="9" endcolumn="5" endline="79" endtoken="12158"
+   <duplication lines="53" tokens="216">
+      <file begintoken="5728" column="9" endcolumn="5" endline="75" endtoken="5943"
+            line="23"
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\ull\es\FourthRatings.java"/>
+      <file begintoken="8561" column="9" endcolumn="5" endline="88" endtoken="8776"
             line="38"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/ThirdRatings.java"/>
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\ull\es\ThirdRatings.java"/>
       <codefragment><![CDATA[        for(Rater rater:myRaters){
             if(rater.hasRating(id)){
                 countRaters++;
@@ -20,8 +20,13 @@
         return average;
         
     }
-    
-    public ArrayList<Rating> getAverageRatings(int minimalRaters){
+
+	/**
+	 * This method returns an ArrayList of all the Rating objects for movies that
+	 * @param minimalRaters
+	 * @return
+	 */
+	public ArrayList<Rating> getAverageRatings(int minimalRaters){
         ArrayList<Rating> avgRatingList = new ArrayList<Rating>();
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
         for(String id:movies){
@@ -35,6 +40,12 @@
         return avgRatingList;
     }
 
+	/**
+	 * This method returns an ArrayList of all the Rating objects for movies that
+	 * @param minimalRaters
+	 * @param filterCriteria
+	 * @return
+	 */
     public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters,Filter filterCriteria)
     {
         ArrayList<Rating> avgRatingListByFilter = new ArrayList<Rating>();
@@ -50,45 +61,28 @@
 
     }]]></codefragment>
    </duplication>
-   <duplication lines="16" tokens="110">
-      <file begintoken="7985" column="36" endcolumn="15" endline="82" endtoken="8094"
-            line="67"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerSimilarRatings.java"/>
-      <file begintoken="9998" column="36" endcolumn="16" endline="176" endtoken="10107"
-            line="161"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/MovieRunnerWithFilters.java"/>
-      <codefragment><![CDATA[        ArrayList<Rating> list = fr.getAverageRatingsByFilter(minimalRaters,filtersList);
-        Collections.sort(list);
-        System.out.println(list.size() + " movie " + "matched");
-
-        for(Rating r:list){
-            String Title = MovieDatabase.getTitle(r.getItem());
-            String Genre = MovieDatabase.getGenres(r.getItem());
-            int Year = MovieDatabase.getYear(r.getItem());
-
-            System.out.println(r.getValue()+ " " + Year +" "+ Title );
-            System.out.println("       "+ Genre);
-        }
-
-    }
-
-    public void printSimiliarRatings(){]]></codefragment>
-   </duplication>
-   <duplication lines="28" tokens="110">
-      <file begintoken="11579" column="30" endcolumn="65" endline="60" endtoken="11688"
-            line="33"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/SecondRatings.java"/>
-      <file begintoken="11905" column="45" endcolumn="65" endline="53" endtoken="12014"
-            line="26"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/ull/es/ThirdRatings.java"/>
+   <duplication lines="39" tokens="110">
+      <file begintoken="8197" column="30" endcolumn="65" endline="65" endtoken="8306"
+            line="27"
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\ull\es\SecondRatings.java"/>
+      <file begintoken="8523" column="45" endcolumn="65" endline="57" endtoken="8632"
+            line="18"
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\ull\es\ThirdRatings.java"/>
       <codefragment><![CDATA[        return myMovies.size();
     
     }
-    
+
+    /**
+     * @return the number of raters that were read in and stored in the ArrayList of type Rater
+     */
     public int getRaterSize(){
         return myRaters.size();
     }
-    
+
+    /**
+     * @param id of the movie
+     * @return the title of the movie
+     */
     private double getAverageByID(String id,int minimalRaters){
         double average =0;
         double total=0;
@@ -106,17 +100,21 @@
         return average;
         
     }
-    
+
+    /**
+     * @param minimalRaters
+     * @return an ArrayList of type Rating of all the movies and their average ratings, for all those movies that have at least the minimal number of raters supplying a rating
+     */
     public ArrayList<Rating> getAverageRatings(int minimalRaters){
         ArrayList<Rating> avgRatingList = new ArrayList<Rating>();]]></codefragment>
    </duplication>
    <duplication lines="82" tokens="106">
       <file begintoken="183" column="30" endcolumn="40" endline="241" endtoken="288"
             line="160"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/FileResource.java"/>
-      <file begintoken="4166" column="103" endcolumn="40" endline="155" endtoken="4271"
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\edu\duke\FileResource.java"/>
+      <file begintoken="4167" column="103" endcolumn="40" endline="155" endtoken="4272"
             line="76"
-            path="/Users/angelcapote/Documents/GitHub/Recomendador/src/main/java/edu/duke/URLResource.java"/>
+            path="C:\Users\JORGE\git\RecomendadorFinal\src\main\java\edu\duke\URLResource.java"/>
       <codefragment><![CDATA[            initRead(filename);
         }
     }
