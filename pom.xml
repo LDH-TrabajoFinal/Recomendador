@@ -118,7 +118,18 @@
              </reportSets>
         </plugin>
 
+	<plugin>
+		<artifactId>maven-javadoc-plugin</artifactId>
+		<configuration>
+			<goal>javadoc:aggregate</goal>
+			<breakiterator>true</breakiterator>
+			<quiet>true</quiet>
+			<source>${jdk.version}</source>
+			<verbose>false</verbose>
+			<linksource>true</linksource>
 
+			</configuration>
+	</plugin>
 
         </plugins>
     </reporting>
