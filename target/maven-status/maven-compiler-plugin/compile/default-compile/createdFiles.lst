@@ -15,7 +15,6 @@ ull\es\Rater.class
 ull\es\DirectorsFilter.class
 ull\es\YearAfterFilter.class
 edu\duke\Point.class
-edu\duke\URLResource.class
 ull\es\FourthRatings.class
 edu\duke\StorageResource.class
 ull\es\Client.class
