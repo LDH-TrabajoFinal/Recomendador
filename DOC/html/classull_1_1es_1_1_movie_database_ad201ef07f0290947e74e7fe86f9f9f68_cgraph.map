@@ -1,0 +1,4 @@
+<map id="ull.es.MovieDatabase.getMovie" name="ull.es.MovieDatabase.getMovie">
+<area shape="rect" id="node1" title="Devuelve una película." alt="" coords="5,5,172,45"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_movie_database.html#a3cdf7c62be91cab4252f9314dbce0e0a" title="Carga los datos de los ficheros de películas y de los actores." alt="" coords="220,13,416,38"/>
+</map>

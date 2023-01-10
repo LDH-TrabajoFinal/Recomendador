@@ -1,0 +1,4 @@
+<map id="ull.es.MovieDatabase.getMinutes" name="ull.es.MovieDatabase.getMinutes">
+<area shape="rect" id="node1" title="Devuelve los minutos de una película." alt="" coords="281,5,448,45"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_recommendation_runner.html#a67c949c8c4ddfdb32fb5a20c1785837c" title="imprime por pantalla recomendaciones de peliculas para un usuario" alt="" coords="5,5,233,45"/>
+</map>

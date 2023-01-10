@@ -1,0 +1,15 @@
+<map id="ull.es.RecommendationRunner.printRecommendationsFor" name="ull.es.RecommendationRunner.printRecommendationsFor">
+<area shape="rect" id="node1" title="imprime por pantalla recomendaciones de peliculas para un usuario" alt="" coords="5,207,233,247"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_movie_database.html#ae45e268b2b375b4487e851d221d27315" title="Devuelve el pais de una película." alt="" coords="524,5,691,45"/>
+<area shape="rect" id="node4" href="$classull_1_1es_1_1_movie_database.html#a6e7da60852e0f18c43654348e3033671" title="Devuelve el director de una película." alt="" coords="750,63,917,103"/>
+<area shape="rect" id="node5" href="$classull_1_1es_1_1_movie_database.html#ab38f0e7e2001f36a0d58f059d7ce348b" title="Devuelve el genero de una película." alt="" coords="524,120,691,160"/>
+<area shape="rect" id="node6" href="$classull_1_1es_1_1_movie_database.html#a27244d06c6dbf5012109081d7c09c670" title="Devuelve los minutos de una película." alt="" coords="750,177,917,217"/>
+<area shape="rect" id="node7" href="$classull_1_1es_1_1_movie_database.html#a79fbbc44314765f968b633ada4b44eac" title="Devuelve el poster de una película." alt="" coords="295,235,462,275"/>
+<area shape="rect" id="node8" href="$classull_1_1es_1_1_fourth_ratings.html#a67cba84d73336bbc69418edaa149a185" title=" " alt="" coords="299,299,459,339"/>
+<area shape="rect" id="node12" href="$classull_1_1es_1_1_movie_database.html#a31be93501e38f079096d0753f7436697" title="Devuelve el título de una película." alt="" coords="524,377,691,417"/>
+<area shape="rect" id="node13" href="$classull_1_1es_1_1_movie_database.html#a0fd98b6bbf243f2638d67b114ea0fbb5" title="Devuelve el año de una película." alt="" coords="281,438,476,463"/>
+<area shape="rect" id="node3" href="$classull_1_1es_1_1_movie_database.html#a3cdf7c62be91cab4252f9314dbce0e0a" title="Carga los datos de los ficheros de películas y de los actores." alt="" coords="976,214,1172,239"/>
+<area shape="rect" id="node9" href="$classull_1_1es_1_1_fourth_ratings.html#a4b204b3ad32988a2c4a78a345ee654dd" title=" " alt="" coords="527,299,687,339"/>
+<area shape="rect" id="node10" href="$classull_1_1es_1_1_movie_database.html#a94bad124a3dcf2b2b35dffe9015afe7f" title="Devuelve un ArrayList de todas las películas cargadas." alt="" coords="739,293,928,318"/>
+<area shape="rect" id="node11" href="$classull_1_1es_1_1_rater_database.html#a425078a6929f47ccb7a8c3277c469fd9" title=" " alt="" coords="751,343,916,383"/>
+</map>

@@ -1,0 +1,69 @@
+\hypertarget{interfaceull_1_1es_1_1_recommender}{}\doxysection{ull.\+es.\+Recommender Interface Reference}
+\label{interfaceull_1_1es_1_1_recommender}\index{ull.es.Recommender@{ull.es.Recommender}}
+
+
+Inheritance diagram for ull.\+es.\+Recommender\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{interfaceull_1_1es_1_1_recommender__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{interfaceull_1_1es_1_1_recommender_a79944739ff55bec6413b0357c855d06d}{get\+Items\+To\+Rate}} ()
+\item 
+void \mbox{\hyperlink{interfaceull_1_1es_1_1_recommender_a41a403811bec25577ff6d1cdfb4c316d}{print\+Recommendations\+For}} (String web\+Rater\+ID)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cuando los usuarios visitan por primera vez el sitio web del recomendador, nuestro código llamará al método get\+Items\+To\+Rate () para obtener una lista de películas para mostrar en la página web para que los usuarios califiquen.
+
+Cuando un usuario envía sus calificaciones, nuestro código llamará al método print\+Recommendations\+For para obtener sus recomendaciones basadas en las calificaciones del usuario. El ID que se le da a este método es para un nuevo \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} que ya hemos agregado a la \mbox{\hyperlink{classull_1_1es_1_1_rater_database}{Rater\+Database}} con calificaciones para las películas devueltas por el primer método. Lo que se imprima desde ese método se mostrará en la página web\+: HTML, texto sin formato o información de depuración. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceull_1_1es_1_1_recommender_a79944739ff55bec6413b0357c855d06d}\label{interfaceull_1_1es_1_1_recommender_a79944739ff55bec6413b0357c855d06d}} 
+\index{ull.es.Recommender@{ull.es.Recommender}!getItemsToRate@{getItemsToRate}}
+\index{getItemsToRate@{getItemsToRate}!ull.es.Recommender@{ull.es.Recommender}}
+\doxysubsubsection{\texorpdfstring{getItemsToRate()}{getItemsToRate()}}
+{\footnotesize\ttfamily Array\+List$<$ String $>$ ull.\+es.\+Recommender.\+get\+Items\+To\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Este método devuelve una lista de identificadores de películas que se utilizarán para buscar las películas en la \mbox{\hyperlink{classull_1_1es_1_1_movie_database}{Movie\+Database}} y presentarlas a los usuarios para que las califiquen.
+
+Las películas devueltas en la lista se mostrarán en una página web, por lo que el número que elija puede afectar el tiempo que tarda en cargar la página y la disposición de los usuarios a calificar las películas. Por ejemplo, 10-\/20 debería estar bien, 50 o más serían demasiados.
+
+No hay restricciones en el método que utilice para generar esta lista de películas\+: las películas más recientes, películas de un género específico, películas elegidas al azar o simplemente sus películas favoritas.
+
+Las calificaciones de estas películas harán el perfil de un nuevo \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} que se utilizará para comparar para encontrar recomendaciones. 
+
+Implemented in \mbox{\hyperlink{classull_1_1es_1_1_recommendation_runner_a9059c80744a94aa6337d9fb04821cf6a}{ull.\+es.\+Recommendation\+Runner}}.
+
+\mbox{\Hypertarget{interfaceull_1_1es_1_1_recommender_a41a403811bec25577ff6d1cdfb4c316d}\label{interfaceull_1_1es_1_1_recommender_a41a403811bec25577ff6d1cdfb4c316d}} 
+\index{ull.es.Recommender@{ull.es.Recommender}!printRecommendationsFor@{printRecommendationsFor}}
+\index{printRecommendationsFor@{printRecommendationsFor}!ull.es.Recommender@{ull.es.Recommender}}
+\doxysubsubsection{\texorpdfstring{printRecommendationsFor()}{printRecommendationsFor()}}
+{\footnotesize\ttfamily void ull.\+es.\+Recommender.\+print\+Recommendations\+For (\begin{DoxyParamCaption}\item[{String}]{web\+Rater\+ID }\end{DoxyParamCaption})}
+
+Este método no devuelve nada, pero imprime una tabla HTML de las películas recomendadas para el rater dado.
+
+El HTML impreso se mostrará en una página web, por lo que el número que elija para mostrar puede afectar el tiempo que tarda en cargar la página. Por ejemplo, es posible que desee limitar el número impreso solo a las 20-\/50 mejores películas recomendadas o a películas no calificadas por el rater dado.
+
+También puede incluir estilos CSS para su tabla utilizando la etiqueta \texorpdfstring{$<$}{<}style\texorpdfstring{$>$}{>} antes de imprimir la tabla. No hay restricciones sobre qué películas imprime, en qué orden las imprime o qué información incluye sobre cada película.
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+Rater\+ID} & el ID de un nuevo \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} que ya se ha agregado a la \mbox{\hyperlink{classull_1_1es_1_1_rater_database}{Rater\+Database}} con calificaciones para las películas devueltas por el método get\+Items\+To\+Rate \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classull_1_1es_1_1_recommendation_runner_a67c949c8c4ddfdb32fb5a20c1785837c}{ull.\+es.\+Recommendation\+Runner}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/ull/es/Recommender.\+java\end{DoxyCompactItemize}

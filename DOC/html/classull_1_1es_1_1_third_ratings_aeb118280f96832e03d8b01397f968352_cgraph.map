@@ -1,0 +1,5 @@
+<map id="ull.es.ThirdRatings.getAverageRatings" name="ull.es.ThirdRatings.getAverageRatings">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,45"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_movie_database.html#a94bad124a3dcf2b2b35dffe9015afe7f" title="Devuelve un ArrayList de todas las películas cargadas." alt="" coords="251,13,440,38"/>
+<area shape="rect" id="node3" href="$classull_1_1es_1_1_movie_database.html#a3cdf7c62be91cab4252f9314dbce0e0a" title="Carga los datos de los ficheros de películas y de los actores." alt="" coords="488,13,684,38"/>
+</map>

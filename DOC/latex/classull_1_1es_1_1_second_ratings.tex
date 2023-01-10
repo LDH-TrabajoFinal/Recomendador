@@ -1,0 +1,86 @@
+\hypertarget{classull_1_1es_1_1_second_ratings}{}\doxysection{ull.\+es.\+Second\+Ratings Class Reference}
+\label{classull_1_1es_1_1_second_ratings}\index{ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_a540af895fc1f52002e540d570ac21e1d}\label{classull_1_1es_1_1_second_ratings_a540af895fc1f52002e540d570ac21e1d}} 
+{\bfseries Second\+Ratings} (String moviefile, String load\+Raters)
+\item 
+int \mbox{\hyperlink{classull_1_1es_1_1_second_ratings_a4dbcaa11a95a899adb4ff8bf31f850d7}{get\+Movie\+Size}} ()
+\item 
+int \mbox{\hyperlink{classull_1_1es_1_1_second_ratings_a346f7da1742fbad5ea26c5851a58158c}{get\+Rater\+Size}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classull_1_1es_1_1_second_ratings_ab75ee07ec39cb1e498e56eb03b77feb9}{get\+Average\+Ratings}} (int minimal\+Raters)
+\item 
+String \mbox{\hyperlink{classull_1_1es_1_1_second_ratings_a2795ebd287336599ce11a3468cb0566d}{get\+Title}} (String id)
+\item 
+String \mbox{\hyperlink{classull_1_1es_1_1_second_ratings_ad977889a9d04c179fba04d84dc9adaac}{get\+ID}} (String title)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_ab75ee07ec39cb1e498e56eb03b77feb9}\label{classull_1_1es_1_1_second_ratings_ab75ee07ec39cb1e498e56eb03b77feb9}} 
+\index{ull.es.SecondRatings@{ull.es.SecondRatings}!getAverageRatings@{getAverageRatings}}
+\index{getAverageRatings@{getAverageRatings}!ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsubsection{\texorpdfstring{getAverageRatings()}{getAverageRatings()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ ull.\+es.\+Second\+Ratings.\+get\+Average\+Ratings (\begin{DoxyParamCaption}\item[{int}]{minimal\+Raters }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimal\+Raters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Array\+List of type \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} of all the movies and their average ratings, for all those movies that have at least the minimal number of raters supplying a rating 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_ad977889a9d04c179fba04d84dc9adaac}\label{classull_1_1es_1_1_second_ratings_ad977889a9d04c179fba04d84dc9adaac}} 
+\index{ull.es.SecondRatings@{ull.es.SecondRatings}!getID@{getID}}
+\index{getID@{getID}!ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily String ull.\+es.\+Second\+Ratings.\+get\+ID (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & of the movie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the movie ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_a4dbcaa11a95a899adb4ff8bf31f850d7}\label{classull_1_1es_1_1_second_ratings_a4dbcaa11a95a899adb4ff8bf31f850d7}} 
+\index{ull.es.SecondRatings@{ull.es.SecondRatings}!getMovieSize@{getMovieSize}}
+\index{getMovieSize@{getMovieSize}!ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsubsection{\texorpdfstring{getMovieSize()}{getMovieSize()}}
+{\footnotesize\ttfamily int ull.\+es.\+Second\+Ratings.\+get\+Movie\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the number of movies that were read in and stored in the Array\+List of type \mbox{\hyperlink{classull_1_1es_1_1_movie}{Movie}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_a346f7da1742fbad5ea26c5851a58158c}\label{classull_1_1es_1_1_second_ratings_a346f7da1742fbad5ea26c5851a58158c}} 
+\index{ull.es.SecondRatings@{ull.es.SecondRatings}!getRaterSize@{getRaterSize}}
+\index{getRaterSize@{getRaterSize}!ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsubsection{\texorpdfstring{getRaterSize()}{getRaterSize()}}
+{\footnotesize\ttfamily int ull.\+es.\+Second\+Ratings.\+get\+Rater\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the number of raters that were read in and stored in the Array\+List of type \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classull_1_1es_1_1_second_ratings_a2795ebd287336599ce11a3468cb0566d}\label{classull_1_1es_1_1_second_ratings_a2795ebd287336599ce11a3468cb0566d}} 
+\index{ull.es.SecondRatings@{ull.es.SecondRatings}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!ull.es.SecondRatings@{ull.es.SecondRatings}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily String ull.\+es.\+Second\+Ratings.\+get\+Title (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & of the movie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the movie ID 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/ull/es/Second\+Ratings.\+java\end{DoxyCompactItemize}

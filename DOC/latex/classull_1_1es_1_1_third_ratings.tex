@@ -1,0 +1,77 @@
+\hypertarget{classull_1_1es_1_1_third_ratings}{}\doxysection{ull.\+es.\+Third\+Ratings Class Reference}
+\label{classull_1_1es_1_1_third_ratings}\index{ull.es.ThirdRatings@{ull.es.ThirdRatings}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classull_1_1es_1_1_third_ratings_a37c719c3087c55dc8c1d3dff939f8f3d}\label{classull_1_1es_1_1_third_ratings_a37c719c3087c55dc8c1d3dff939f8f3d}} 
+{\bfseries Third\+Ratings} (String ratingsfile)
+\item 
+int \mbox{\hyperlink{classull_1_1es_1_1_third_ratings_aeb887af4e81e3bf2f8f81b17af5e087a}{get\+Rater\+Size}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classull_1_1es_1_1_third_ratings_aeb118280f96832e03d8b01397f968352}{get\+Average\+Ratings}} (int minimal\+Raters)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ \mbox{\hyperlink{classull_1_1es_1_1_third_ratings_aa05c56b5503571294147b8c475de84ab}{get\+Average\+Ratings\+By\+Filter}} (int minimal\+Raters, \mbox{\hyperlink{interfaceull_1_1es_1_1_filter}{Filter}} filter\+Criteria)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classull_1_1es_1_1_third_ratings_aeb118280f96832e03d8b01397f968352}\label{classull_1_1es_1_1_third_ratings_aeb118280f96832e03d8b01397f968352}} 
+\index{ull.es.ThirdRatings@{ull.es.ThirdRatings}!getAverageRatings@{getAverageRatings}}
+\index{getAverageRatings@{getAverageRatings}!ull.es.ThirdRatings@{ull.es.ThirdRatings}}
+\doxysubsubsection{\texorpdfstring{getAverageRatings()}{getAverageRatings()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ ull.\+es.\+Third\+Ratings.\+get\+Average\+Ratings (\begin{DoxyParamCaption}\item[{int}]{minimal\+Raters }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimal\+Raters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Array\+List of all the \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} objects for movies that have at least the minimal number of raters supplying a rating 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_third_ratings_aeb118280f96832e03d8b01397f968352_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_third_ratings_aa05c56b5503571294147b8c475de84ab}\label{classull_1_1es_1_1_third_ratings_aa05c56b5503571294147b8c475de84ab}} 
+\index{ull.es.ThirdRatings@{ull.es.ThirdRatings}!getAverageRatingsByFilter@{getAverageRatingsByFilter}}
+\index{getAverageRatingsByFilter@{getAverageRatingsByFilter}!ull.es.ThirdRatings@{ull.es.ThirdRatings}}
+\doxysubsubsection{\texorpdfstring{getAverageRatingsByFilter()}{getAverageRatingsByFilter()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} $>$ ull.\+es.\+Third\+Ratings.\+get\+Average\+Ratings\+By\+Filter (\begin{DoxyParamCaption}\item[{int}]{minimal\+Raters,  }\item[{\mbox{\hyperlink{interfaceull_1_1es_1_1_filter}{Filter}}}]{filter\+Criteria }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimal\+Raters} & \\
+\hline
+{\em filter\+Criteria} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Array\+List of all the \mbox{\hyperlink{classull_1_1es_1_1_rating}{Rating}} objects for movies that have at least the minimal number of raters supplying a rating and satisfies the filter criteria 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_third_ratings_aa05c56b5503571294147b8c475de84ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_third_ratings_aeb887af4e81e3bf2f8f81b17af5e087a}\label{classull_1_1es_1_1_third_ratings_aeb887af4e81e3bf2f8f81b17af5e087a}} 
+\index{ull.es.ThirdRatings@{ull.es.ThirdRatings}!getRaterSize@{getRaterSize}}
+\index{getRaterSize@{getRaterSize}!ull.es.ThirdRatings@{ull.es.ThirdRatings}}
+\doxysubsubsection{\texorpdfstring{getRaterSize()}{getRaterSize()}}
+{\footnotesize\ttfamily int ull.\+es.\+Third\+Ratings.\+get\+Rater\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the number of raters 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/ull/es/Third\+Ratings.\+java\end{DoxyCompactItemize}

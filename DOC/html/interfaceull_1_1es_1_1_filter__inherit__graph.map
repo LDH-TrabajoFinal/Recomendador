@@ -1,0 +1,9 @@
+<map id="ull.es.Filter" name="ull.es.Filter">
+<area shape="rect" id="node1" title="Clase abstracta que representa un filtro." alt="" coords="5,129,92,155"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_all_filters.html" title="clase que guarda una lista de filtros" alt="" coords="156,5,264,31"/>
+<area shape="rect" id="node3" href="$classull_1_1es_1_1_directors_filter.html" title="clase que implementa el filtro para directores" alt="" coords="141,55,279,80"/>
+<area shape="rect" id="node4" href="$classull_1_1es_1_1_genre_filter.html" title="clase que implementa el filtro para generos" alt="" coords="149,104,271,129"/>
+<area shape="rect" id="node5" href="$classull_1_1es_1_1_minutes_filter.html" title="clase que implementa el filtro para el numero de minutos" alt="" coords="144,153,276,179"/>
+<area shape="rect" id="node6" href="$classull_1_1es_1_1_true_filter.html" title="clase que representa un filtro" alt="" coords="155,203,265,228"/>
+<area shape="rect" id="node7" href="$classull_1_1es_1_1_year_after_filter.html" title="clase que implementa el filtro para el año" alt="" coords="140,252,280,277"/>
+</map>

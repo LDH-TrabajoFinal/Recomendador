@@ -1,0 +1,108 @@
+\hypertarget{classull_1_1es_1_1_rater_database}{}\doxysection{ull.\+es.\+Rater\+Database Class Reference}
+\label{classull_1_1es_1_1_rater_database}\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_af1c84b21146f757d766385be244a433c}\label{classull_1_1es_1_1_rater_database_af1c84b21146f757d766385be244a433c}} 
+static void {\bfseries initialize} (String filename)
+\item 
+static void \mbox{\hyperlink{classull_1_1es_1_1_rater_database_a203b3ab58f8f6d9f03fe1232aa9972fa}{add\+Ratings}} (String filename)
+\item 
+static void \mbox{\hyperlink{classull_1_1es_1_1_rater_database_abd7c81825556b136cf6fc641ac11851b}{add\+Rater\+Rating}} (String rater\+ID, String movie\+ID, double rating)
+\item 
+static \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} \mbox{\hyperlink{classull_1_1es_1_1_rater_database_ad0596113373d5034631f2263e4c28fd1}{get\+Rater}} (String id)
+\item 
+static Array\+List$<$ \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} $>$ \mbox{\hyperlink{classull_1_1es_1_1_rater_database_a425078a6929f47ccb7a8c3277c469fd9}{get\+Raters}} ()
+\item 
+static int \mbox{\hyperlink{classull_1_1es_1_1_rater_database_a3043f012034c038d940248f47c6d823a}{size}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_abd7c81825556b136cf6fc641ac11851b}\label{classull_1_1es_1_1_rater_database_abd7c81825556b136cf6fc641ac11851b}} 
+\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}!addRaterRating@{addRaterRating}}
+\index{addRaterRating@{addRaterRating}!ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsubsection{\texorpdfstring{addRaterRating()}{addRaterRating()}}
+{\footnotesize\ttfamily static void ull.\+es.\+Rater\+Database.\+add\+Rater\+Rating (\begin{DoxyParamCaption}\item[{String}]{rater\+ID,  }\item[{String}]{movie\+ID,  }\item[{double}]{rating }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method adds a rater to the database 
+\begin{DoxyParams}{Parameters}
+{\em rater\+ID} & the ID of the rater \\
+\hline
+{\em movie\+ID} & the ID of the movie \\
+\hline
+{\em rating} & the rating of the movie \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_rater_database_abd7c81825556b136cf6fc641ac11851b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_a203b3ab58f8f6d9f03fe1232aa9972fa}\label{classull_1_1es_1_1_rater_database_a203b3ab58f8f6d9f03fe1232aa9972fa}} 
+\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}!addRatings@{addRatings}}
+\index{addRatings@{addRatings}!ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsubsection{\texorpdfstring{addRatings()}{addRatings()}}
+{\footnotesize\ttfamily static void ull.\+es.\+Rater\+Database.\+add\+Ratings (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method adds the ratings of a rater to the database 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_rater_database_a203b3ab58f8f6d9f03fe1232aa9972fa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_ad0596113373d5034631f2263e4c28fd1}\label{classull_1_1es_1_1_rater_database_ad0596113373d5034631f2263e4c28fd1}} 
+\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}!getRater@{getRater}}
+\index{getRater@{getRater}!ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsubsection{\texorpdfstring{getRater()}{getRater()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} ull.\+es.\+Rater\+Database.\+get\+Rater (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method returns a rater given its ID 
+\begin{DoxyParams}{Parameters}
+{\em id} & the ID of the rater \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rater 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_a425078a6929f47ccb7a8c3277c469fd9}\label{classull_1_1es_1_1_rater_database_a425078a6929f47ccb7a8c3277c469fd9}} 
+\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}!getRaters@{getRaters}}
+\index{getRaters@{getRaters}!ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsubsection{\texorpdfstring{getRaters()}{getRaters()}}
+{\footnotesize\ttfamily static Array\+List$<$ \mbox{\hyperlink{interfaceull_1_1es_1_1_rater}{Rater}} $>$ ull.\+es.\+Rater\+Database.\+get\+Raters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method returns the list of raters \begin{DoxyReturn}{Returns}
+the list of raters 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_rater_database_a425078a6929f47ccb7a8c3277c469fd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_rater_database_a3043f012034c038d940248f47c6d823a}\label{classull_1_1es_1_1_rater_database_a3043f012034c038d940248f47c6d823a}} 
+\index{ull.es.RaterDatabase@{ull.es.RaterDatabase}!size@{size}}
+\index{size@{size}!ull.es.RaterDatabase@{ull.es.RaterDatabase}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily static int ull.\+es.\+Rater\+Database.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method returns the number of raters \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/ull/es/Rater\+Database.\+java\end{DoxyCompactItemize}

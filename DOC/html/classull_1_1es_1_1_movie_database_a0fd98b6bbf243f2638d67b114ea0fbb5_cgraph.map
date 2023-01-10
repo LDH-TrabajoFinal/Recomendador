@@ -1,0 +1,4 @@
+<map id="ull.es.MovieDatabase.getYear" name="ull.es.MovieDatabase.getYear">
+<area shape="rect" id="node1" title="Devuelve el año de una película." alt="" coords="5,5,200,31"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_movie_database.html#a3cdf7c62be91cab4252f9314dbce0e0a" title="Carga los datos de los ficheros de películas y de los actores." alt="" coords="248,5,444,31"/>
+</map>

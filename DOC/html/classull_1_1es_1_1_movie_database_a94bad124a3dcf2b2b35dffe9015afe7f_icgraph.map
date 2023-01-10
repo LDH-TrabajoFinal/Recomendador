@@ -1,0 +1,10 @@
+<map id="ull.es.MovieDatabase.filterBy" name="ull.es.MovieDatabase.filterBy">
+<area shape="rect" id="node1" title="Devuelve un ArrayList de todas las películas cargadas." alt="" coords="735,141,924,166"/>
+<area shape="rect" id="node2" href="$classull_1_1es_1_1_fourth_ratings.html#a067ebc390eb3c0d6f9567bcc6cb93751" title=" " alt="" coords="508,5,668,45"/>
+<area shape="rect" id="node3" href="$classull_1_1es_1_1_third_ratings.html#aeb118280f96832e03d8b01397f968352" title=" " alt="" coords="489,69,687,109"/>
+<area shape="rect" id="node4" href="$classull_1_1es_1_1_fourth_ratings.html#aff4cfaa2c72679743cd3847a9e3dd9f6" title=" " alt="" coords="508,133,668,173"/>
+<area shape="rect" id="node5" href="$classull_1_1es_1_1_third_ratings.html#aa05c56b5503571294147b8c475de84ab" title=" " alt="" coords="489,197,687,237"/>
+<area shape="rect" id="node6" href="$classull_1_1es_1_1_fourth_ratings.html#a4b204b3ad32988a2c4a78a345ee654dd" title=" " alt="" coords="508,261,668,301"/>
+<area shape="rect" id="node7" href="$classull_1_1es_1_1_fourth_ratings.html#a67cba84d73336bbc69418edaa149a185" title=" " alt="" coords="281,261,441,301"/>
+<area shape="rect" id="node8" href="$classull_1_1es_1_1_recommendation_runner.html#a67c949c8c4ddfdb32fb5a20c1785837c" title="imprime por pantalla recomendaciones de peliculas para un usuario" alt="" coords="5,261,233,301"/>
+</map>

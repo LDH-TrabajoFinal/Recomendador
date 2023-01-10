@@ -1,0 +1,325 @@
+\hypertarget{classull_1_1es_1_1_movie_database}{}\doxysection{ull.\+es.\+Movie\+Database Class Reference}
+\label{classull_1_1es_1_1_movie_database}\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a3cdf7c62be91cab4252f9314dbce0e0a}\label{classull_1_1es_1_1_movie_database_a3cdf7c62be91cab4252f9314dbce0e0a}} 
+static void {\bfseries initialize} (String moviefile)
+\begin{DoxyCompactList}\small\item\em Carga los datos de los ficheros de películas y de los actores. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a260cab5d47b0c79c3018c6f97c4ed68b}{contains\+ID}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el número de películas cargadas. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a0fd98b6bbf243f2638d67b114ea0fbb5}{get\+Year}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el año de una película. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classull_1_1es_1_1_movie_database_ab38f0e7e2001f36a0d58f059d7ce348b}{get\+Genres}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el genero de una película. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a31be93501e38f079096d0753f7436697}{get\+Title}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el título de una película. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classull_1_1es_1_1_movie}{Movie}} \mbox{\hyperlink{classull_1_1es_1_1_movie_database_ad201ef07f0290947e74e7fe86f9f9f68}{get\+Movie}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve una película. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a79fbbc44314765f968b633ada4b44eac}{get\+Poster}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el poster de una película. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a27244d06c6dbf5012109081d7c09c670}{get\+Minutes}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve los minutos de una película. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classull_1_1es_1_1_movie_database_ae45e268b2b375b4487e851d221d27315}{get\+Country}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el pais de una película. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a6e7da60852e0f18c43654348e3033671}{get\+Director}} (String id)
+\begin{DoxyCompactList}\small\item\em Devuelve el director de una película. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a083f4cb3891f9384c7110844a2cb6340}{size}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el número de películas cargadas. \end{DoxyCompactList}\item 
+static Array\+List$<$ String $>$ \mbox{\hyperlink{classull_1_1es_1_1_movie_database_a94bad124a3dcf2b2b35dffe9015afe7f}{filter\+By}} (\mbox{\hyperlink{interfaceull_1_1es_1_1_filter}{Filter}} f)
+\begin{DoxyCompactList}\small\item\em Devuelve un Array\+List de todas las películas cargadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a260cab5d47b0c79c3018c6f97c4ed68b}\label{classull_1_1es_1_1_movie_database_a260cab5d47b0c79c3018c6f97c4ed68b}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!containsID@{containsID}}
+\index{containsID@{containsID}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{containsID()}{containsID()}}
+{\footnotesize\ttfamily static boolean ull.\+es.\+Movie\+Database.\+contains\+ID (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el número de películas cargadas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a260cab5d47b0c79c3018c6f97c4ed68b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a94bad124a3dcf2b2b35dffe9015afe7f}\label{classull_1_1es_1_1_movie_database_a94bad124a3dcf2b2b35dffe9015afe7f}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!filterBy@{filterBy}}
+\index{filterBy@{filterBy}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{filterBy()}{filterBy()}}
+{\footnotesize\ttfamily static Array\+List$<$ String $>$ ull.\+es.\+Movie\+Database.\+filter\+By (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceull_1_1es_1_1_filter}{Filter}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve un Array\+List de todas las películas cargadas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a94bad124a3dcf2b2b35dffe9015afe7f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a94bad124a3dcf2b2b35dffe9015afe7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_ae45e268b2b375b4487e851d221d27315}\label{classull_1_1es_1_1_movie_database_ae45e268b2b375b4487e851d221d27315}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getCountry@{getCountry}}
+\index{getCountry@{getCountry}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getCountry()}{getCountry()}}
+{\footnotesize\ttfamily static String ull.\+es.\+Movie\+Database.\+get\+Country (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el pais de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_ae45e268b2b375b4487e851d221d27315_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_ae45e268b2b375b4487e851d221d27315_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a6e7da60852e0f18c43654348e3033671}\label{classull_1_1es_1_1_movie_database_a6e7da60852e0f18c43654348e3033671}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getDirector@{getDirector}}
+\index{getDirector@{getDirector}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getDirector()}{getDirector()}}
+{\footnotesize\ttfamily static String ull.\+es.\+Movie\+Database.\+get\+Director (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el director de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a6e7da60852e0f18c43654348e3033671_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a6e7da60852e0f18c43654348e3033671_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_ab38f0e7e2001f36a0d58f059d7ce348b}\label{classull_1_1es_1_1_movie_database_ab38f0e7e2001f36a0d58f059d7ce348b}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getGenres@{getGenres}}
+\index{getGenres@{getGenres}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getGenres()}{getGenres()}}
+{\footnotesize\ttfamily static String ull.\+es.\+Movie\+Database.\+get\+Genres (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el genero de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_ab38f0e7e2001f36a0d58f059d7ce348b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_ab38f0e7e2001f36a0d58f059d7ce348b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a27244d06c6dbf5012109081d7c09c670}\label{classull_1_1es_1_1_movie_database_a27244d06c6dbf5012109081d7c09c670}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getMinutes@{getMinutes}}
+\index{getMinutes@{getMinutes}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getMinutes()}{getMinutes()}}
+{\footnotesize\ttfamily static int ull.\+es.\+Movie\+Database.\+get\+Minutes (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve los minutos de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a27244d06c6dbf5012109081d7c09c670_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a27244d06c6dbf5012109081d7c09c670_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_ad201ef07f0290947e74e7fe86f9f9f68}\label{classull_1_1es_1_1_movie_database_ad201ef07f0290947e74e7fe86f9f9f68}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getMovie@{getMovie}}
+\index{getMovie@{getMovie}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getMovie()}{getMovie()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classull_1_1es_1_1_movie}{Movie}} ull.\+es.\+Movie\+Database.\+get\+Movie (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_ad201ef07f0290947e74e7fe86f9f9f68_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a79fbbc44314765f968b633ada4b44eac}\label{classull_1_1es_1_1_movie_database_a79fbbc44314765f968b633ada4b44eac}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getPoster@{getPoster}}
+\index{getPoster@{getPoster}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getPoster()}{getPoster()}}
+{\footnotesize\ttfamily static String ull.\+es.\+Movie\+Database.\+get\+Poster (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el poster de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a79fbbc44314765f968b633ada4b44eac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a79fbbc44314765f968b633ada4b44eac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a31be93501e38f079096d0753f7436697}\label{classull_1_1es_1_1_movie_database_a31be93501e38f079096d0753f7436697}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily static String ull.\+es.\+Movie\+Database.\+get\+Title (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el título de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a31be93501e38f079096d0753f7436697_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a31be93501e38f079096d0753f7436697_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a0fd98b6bbf243f2638d67b114ea0fbb5}\label{classull_1_1es_1_1_movie_database_a0fd98b6bbf243f2638d67b114ea0fbb5}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!getYear@{getYear}}
+\index{getYear@{getYear}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily static int ull.\+es.\+Movie\+Database.\+get\+Year (\begin{DoxyParamCaption}\item[{String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el año de una película. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a0fd98b6bbf243f2638d67b114ea0fbb5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classull_1_1es_1_1_movie_database_a0fd98b6bbf243f2638d67b114ea0fbb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classull_1_1es_1_1_movie_database_a083f4cb3891f9384c7110844a2cb6340}\label{classull_1_1es_1_1_movie_database_a083f4cb3891f9384c7110844a2cb6340}} 
+\index{ull.es.MovieDatabase@{ull.es.MovieDatabase}!size@{size}}
+\index{size@{size}!ull.es.MovieDatabase@{ull.es.MovieDatabase}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily static int ull.\+es.\+Movie\+Database.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve el número de películas cargadas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/ull/es/Movie\+Database.\+java\end{DoxyCompactItemize}
