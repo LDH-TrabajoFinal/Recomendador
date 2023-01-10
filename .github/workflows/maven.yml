@@ -18,7 +18,7 @@ jobs:
   build:
     strategy:
         matrix:
-          platform: [ubuntu-lastest, macos-latest, windows-latest]
+          platform: [macos-latest, windows-latest]
           jdk: [8, 11, 19]
 
     runs-on: ${{ matrix.platform }}
