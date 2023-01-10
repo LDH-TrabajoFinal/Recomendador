@@ -6,7 +6,5 @@
 
 Se encuentra soportado en Maven y SonarCloud, enlaces a continuación:
 
-  Link a SonarCloud: 
-
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=LDH-TrabajoFinal_Recomendador)](https://sonarcloud.io/summary/new_code?id=LDH-TrabajoFinal_Recomendador)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/LDH-TrabajoFinal/Recomendador/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/LDH-TrabajoFinal/Recomendador/tree/master)
