@@ -2,7 +2,9 @@ package ull.es;
 
 /**
  * @brief clase que ejecuta el recomendador de peliculas
- * @author (Bryan Yen)
+ * @author (Ángel Capote)
+ * @author (Diego Díaz)
+ * @author (Jorge Domínguez)
  * @version (2018-01-31)
  */
 public class Client {
