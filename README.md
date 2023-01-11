@@ -2,9 +2,9 @@
 ## Java-Programming-Build-a-Recommendation-System by Duke University
 
 ## Integrantes:
-### Angel Capote Perez (alu0101349404@ull.edu.es)
-### Jorge Domínguez Gonzalez (alu0101330600@ull.edu.es)
-### Diego Diaz Morón (alu0101337975@ull.edu.es)
+#### Angel Capote Perez (alu0101349404@ull.edu.es)
+#### Jorge Domínguez Gonzalez (alu0101330600@ull.edu.es)
+#### Diego Diaz Morón (alu0101337975@ull.edu.es)
 
 ## Introduccion
 Como proyecto final de la asignatura LABORATORIO DE DESARROLLO Y HERRAMIENTAS hemos implementado un sistema recomendador de peliculas en Java.
