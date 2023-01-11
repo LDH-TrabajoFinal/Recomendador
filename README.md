@@ -12,6 +12,7 @@ Como proyecto final de la asignatura LABORATORIO DE DESARROLLO Y HERRAMIENTAS he
 ## Descripcion
 ¿Qué es Un Sistema Recomendador? 
 Se trata de un proyecto de código abierto dedicado a la recomendación de películas. Para llevar a cabo la recomendación, debemos calificar un listado de películas en una escala del 1 al 10 o  no rating ( en caso de desconocer la película). Una vez finalizado, publicamos los ratings y a continuación en función de lo que hemos señalado nos aparece un listado de películas que puedan ser de nuestro interés al ser similares a las que hemos votado anteriormente positivamente.
+
 El proyecto utiliza una licencia Creative Commons Atribution 4.0 International License
 
 Este proyecto ha sido evaluado mediante dos Hitos:
