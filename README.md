@@ -41,5 +41,5 @@ Este proyecto utiiza Maven y Java:
 
 Se encuentra soportado en Maven y SonarCloud, enlaces a continuación:
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=LDH-TrabajoFinal_Recomendador)](https://sonarcloud.io/summary/new_code?id=LDH-TrabajoFinal_Recomendador)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LDH-TrabajoFinal_Recomendador&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LDH-TrabajoFinal_Recomendador)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/LDH-TrabajoFinal/Recomendador/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/LDH-TrabajoFinal/Recomendador/tree/master)
