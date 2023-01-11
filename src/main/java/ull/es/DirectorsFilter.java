@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * @brief clase que implementa el filtro para directores
+ * @author (Bryan Yen)
+ * @version (2018-01-31)
  */
 public  class DirectorsFilter implements Filter{
 	private String myDirectors;
