@@ -14,9 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>ldh-trabajofinal</sonar.organization>
   	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-	<sonar.language>java</sonar.language>
     </properties>
 
     <dependencies>
