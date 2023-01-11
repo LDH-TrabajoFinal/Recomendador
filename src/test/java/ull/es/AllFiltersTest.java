@@ -26,7 +26,7 @@ class AllFiltersTest {
 
 	@Test
 	void testToString() {
-		assertEquals("ull.es.AllFilters@332f25c8", new AllFilters().toString());
+		assertEquals("ull.es.AllFilters@dcc6211", new AllFilters().toString());
 	}
 
 }
