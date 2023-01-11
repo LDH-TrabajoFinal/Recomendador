@@ -24,9 +24,4 @@ class AllFiltersTest {
 		assertEquals(true, new AllFilters().satisfies("1"));
 	}
 
-	@Test
-	void testToString() {
-		assertEquals("ull.es.AllFilters@dcc6211", new AllFilters().toString());
-	}
-
 }
