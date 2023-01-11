@@ -1,5 +1,11 @@
 package ull.es;
 
+/**
+ * @brief clase que es POJO de Rating 
+ * @details esta clase almacena el item y el valor de la valoracion
+ * @author
+ * 
+ */
 
 public class Rating implements Comparable<Rating> {
     private String item;

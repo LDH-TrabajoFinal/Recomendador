@@ -4,6 +4,11 @@ import edu.duke.*;
 import java.util.*;
 import org.apache.commons.csv.*;
 
+/**
+ * @brief clase que obtiene los datos de los raters de un fichero
+ * @details esta clase obtiene los datos de los raters de un fichero
+ */
+
 public class RaterDatabase {
 	private static HashMap<String,Rater> ourRaters;
      

@@ -4,6 +4,12 @@ import edu.duke.*;
 import java.util.*;
 import org.apache.commons.csv.*;
 
+/**
+ * @brief clase que clasifica los datos de un fichero csv
+ * @details esta clase clasifica los datos de un fichero csv y los guarda en un ArrayList
+ * @author
+ */
+
 public class FirstRatings {
     /**
      * This method loads a list of movies from the file specified by the

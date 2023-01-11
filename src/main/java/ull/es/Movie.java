@@ -1,5 +1,11 @@
 package ull.es;
 
+/**
+ * @brief representacion de una pelicula con sus atributos
+ * @details esta clase representa una pelicula con sus atributos
+ * @author
+ * 
+ */
 
 public class Movie {
     private String id;

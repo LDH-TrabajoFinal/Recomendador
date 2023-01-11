@@ -2,6 +2,13 @@ package ull.es;
 
 import java.util.*;
 
+/**
+ * @brief FourthRatings class that calculates the average rating of a movie
+ * @details This class calculates the average rating of a movie and returns an
+ * @author
+ * 
+ */
+
 public class FourthRatings {
 	/**
 	 * This method returns a double representing the average movie rating for this ID

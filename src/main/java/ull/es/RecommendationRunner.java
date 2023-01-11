@@ -2,8 +2,12 @@ package ull.es;
 
 import java.util.*;
 
-
-
+/**
+ * @brief clase que implementa la interfaz Recommender
+ * @details esta clase implementa la interfaz Recommender
+ * @author
+ * 
+ */
 public class RecommendationRunner implements Recommender {
     /**
      * @return lista de peliculas para recomendar

@@ -34,6 +34,7 @@ public interface Recommender {
      * Las calificaciones de estas películas harán el perfil de un nuevo Rater
      * que se utilizará para comparar para encontrar recomendaciones.
      */
+    
     public ArrayList<String> getItemsToRate ();
 
     /**
@@ -55,5 +56,6 @@ public interface Recommender {
      *        RaterDatabase con calificaciones para las películas devueltas por el
      *        método getItemsToRate
      */
+
     public void printRecommendationsFor (String webRaterID);
 }

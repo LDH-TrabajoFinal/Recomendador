@@ -2,6 +2,13 @@ package ull.es;
 
 import java.util.*;
 
+/**
+ * @brief clase que guarda una lista de filtros
+ * @details esta clase guarda una lista de filtros y los aplica a un id
+ * @author
+ * 
+ */
+
 public class EfficientRater implements Rater {
     private String myID;
     private HashMap<String,Rating> myRatings;

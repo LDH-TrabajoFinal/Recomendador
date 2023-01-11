@@ -4,6 +4,10 @@ import java.util.*;
 import org.apache.commons.csv.*;
 import edu.duke.FileResource;
 
+/**
+ * @brief clase que almacena los datos de las películas y de los actores en un HashMap
+ * @details esta clase almacena los datos de las películas y de los actores en un HashMap
+ */
 public class MovieDatabase {
     private static HashMap<String, Movie> ourMovies;
 
