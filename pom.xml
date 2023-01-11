@@ -27,18 +27,18 @@
 	      	<groupId>org.apache.commons</groupId>
 	      	<artifactId>commons-lang3</artifactId>
 	      	<version>3.1</version>
-	</dependency>
-	<dependency>
-		<groupId>org.apache.commons</groupId>
-	      	<artifactId>commons-csv</artifactId>
-	      	<version>1.9.0</version>
-	</dependency>
-	<dependency>
-	        <groupId>edu.duke.cs</groupId>
-	        <artifactId>ospreyservice</artifactId>
-	        <version>0.2</version>
-	</dependency>
-	<dependency>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>1.9.0</version>
+        </dependency>
+        <dependency>
+                <groupId>edu.duke.cs</groupId>
+                <artifactId>ospreyservice</artifactId>
+                <version>0.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.7.2</version>
@@ -50,15 +50,13 @@
             <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
-	<dependency>
-	    <groupId>org.jacoco</groupId>
-	    <artifactId>jacoco-maven-plugin</artifactId>
-	    <version>0.8.7</version>
-	    <scope>test</scope>
-	</dependency>
-    </dependencies>
-
-
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+            <scope>test</scope>
+        </dependency>
+      </dependencies>
 
     <reporting>
         <plugins>  
@@ -193,32 +191,30 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-	<plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.7</version>
-        <executions>
-          <execution>
-            <id>prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>report</id>
-            <goals>
-              <goal>report</goal>
-            </goals>
-            <configuration>
-              <formats>
-                <format>XML</format>
-              </formats>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-        </plugins>
-    </build>
-
-
+            <plugin>
+              <groupId>org.jacoco</groupId>
+              <artifactId>jacoco-maven-plugin</artifactId>
+              <version>0.8.7</version>
+              <executions>
+                <execution>
+                  <id>prepare-agent</id>
+                  <goals>
+                    <goal>prepare-agent</goal>
+                  </goals>
+                </execution>
+                <execution>
+                  <id>report</id>
+                  <goals>
+                    <goal>report</goal>
+                  </goals>
+                  <configuration>
+                    <formats>
+                      <format>XML</format>
+                    </formats>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+      </build>
 </project>
