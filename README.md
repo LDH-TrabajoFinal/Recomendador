@@ -30,11 +30,13 @@ Este proyecto ha sido evaluado mediante dos Hitos:
 ## Instalación
 Este proyecto utiiza Maven y Java:
 1. Clonar este Repositorio
+
 <code>$ git clone git@github.com:LDH-TrabajoFinal/Recomendador.git</code>
 
 2. Accede al Directorio.
 
 3. Compilar
+
 <code>$ mvn compile</code>
 
 Se encuentra soportado en Maven y SonarCloud, enlaces a continuación:
